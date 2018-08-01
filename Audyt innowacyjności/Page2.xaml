@@ -9,7 +9,12 @@
       Title="Page2">
 
 	<Grid>
-		<TextBox x:Name="NazwaPrzedsiebiorstwa" Text="{Binding NazwaPrzedsiebiorstwa, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+		<TextBox x:Name="NazwaPrzedsiebiorstwa" Text="{Binding NazwaPrzedsiebiorstwa, Mode=TwoWay,ValidatesOnNotifyDataErrors=True,
+                        NotifyOnValidationError=True,
+                        UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="23" Margin="391,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653">
+			
+		</TextBox>
+
 		<TextBox x:Name="IloscZmian" HorizontalAlignment="Left" Height="23" Margin="391,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
 		<TextBox x:Name="NumerRegon" HorizontalAlignment="Left" Height="23" Margin="391,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
 		<TextBox x:Name="NumerKRS" HorizontalAlignment="Left" Height="23" Margin="391,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>

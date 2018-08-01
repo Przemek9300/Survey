@@ -9,15 +9,25 @@ using System.Threading.Tasks;
 
 namespace Audyt_innowacyjności.ViewModel
 {
-     public class SurveyViewModel: ValidatableModel
+     public class SurveyViewModel: ValidationBase
     {
         private string nazwaPrzedsiebiorstwa;
+        [Display(Name = "First Name")]
         [Required]
         [StringLength(20)]
         public string NazwaPrzedsiebiorstwa
         {
             get { return nazwaPrzedsiebiorstwa; }
-            set { nazwaPrzedsiebiorstwa = value; RaisePropertyChanged("NazwaPrzedsiebiorstwa"); }
+            set
+            {
+                nazwaPrzedsiebiorstwa = value;
+                Validation();
+    {
+
+                   
+                }
+
+            }
         }
         public int IloscZmian { get; set; }
         public int NumerRegon { get; set; }
@@ -244,6 +254,42 @@ namespace Audyt_innowacyjności.ViewModel
         ///////////27//////////////////////////////////////////////////////////
 
         public string RoznicaProduktow { get; set; }
+
+
+
+        private object _lock = new object();
+        private Dictionary<string, List<string>> _errors =
+         new Dictionary<string, List<string>>();
+
+        private void Validation()
+        {
+            lock (_lock)
+            {
+                //Validate Name
+                List<string> errorsForName;
+                if (!_errors.TryGetValue("NazwaPrzedsiebiorstwa", out errorsForName))
+                    errorsForName = new List<string>();
+                else errorsForName.Clear();
+
+                if (String.IsNullOrEmpty(NazwaPrzedsiebiorstwa))
+                    errorsForName.Add("The name can't be null or empty.");
+
+                _errors["NazwaPrzedsiebiorstwa"] = errorsForName;
+                if (errorsForName.Count > 0) RaiseErrorsChanged("NazwaPrzedsiebiorstwa");
+
+  
+    
+            }
+        }
+
+        public event EventHandler<DataErrorsChangedEventArgs> ErrorsChanged;
+        public void RaiseErrorsChanged(string propertyName)
+        {
+            EventHandler<DataErrorsChangedEventArgs> handler = ErrorsChanged;
+            if (handler == null) return;
+            var arg = new DataErrorsChangedEventArgs(propertyName);
+            handler.Invoke(this, arg);
+        }
 
     }
 }
