@@ -110,6 +110,9 @@
     <Compile Include="Page9.xaml.cs">
       <DependentUpon>Page9.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Result.xaml.cs">
+      <DependentUpon>Result.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModel\ModelBase.cs" />
     <Compile Include="ViewModel\SurveyViewModel.cs" />
     <Page Include="MainWindow.xaml">
@@ -183,6 +186,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Page9.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Result.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

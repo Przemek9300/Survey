@@ -5,90 +5,60 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Audyt_innowacyjności.ViewModel
 {
-    public class ValidatableModel : INotifyDataErrorInfo, INotifyPropertyChanged
+    public class ValidationBase : INotifyDataErrorInfo, INotifyPropertyChanged
     {
-        private ConcurrentDictionary<string, List<string>> _errors =
-            new ConcurrentDictionary<string, List<string>>();
+        private Dictionary<string, List<string>> _errors = new Dictionary<string, List<string>>();
 
+        public event EventHandler<DataErrorsChangedEventArgs> ErrorsChanged;
+
+        // get errors by property
+        public IEnumerable GetErrors(string propertyName)
+        {
+            if (_errors.ContainsKey(propertyName))
+                return _errors[propertyName];
+            return null;
+        }
+
+        public bool HasErrors => _errors.Count > 0;
+
+        // object is valid
+        public bool IsValid => !HasErrors;
+
+        public void AddError(string propertyName, string error)
+        {
+            // Add error to list
+            _errors[propertyName] = new List<string>() { error };
+            NotifyErrorsChanged(propertyName);
+        }
+
+        public void RemoveError(string propertyName)
+        {
+            // remove error
+            if (_errors.ContainsKey(propertyName))
+                _errors.Remove(propertyName);
+            NotifyErrorsChanged(propertyName);
+        }
+
+        public void NotifyErrorsChanged(string propertyName)
+        {
+            // Notify
+            if (ErrorsChanged != null)
+                ErrorsChanged(this, new DataErrorsChangedEventArgs(propertyName));
+        }
         public event PropertyChangedEventHandler PropertyChanged;
 
         public void RaisePropertyChanged(string propertyName)
         {
-            var handler = PropertyChanged;
+            PropertyChangedEventHandler handler = PropertyChanged;
             if (handler != null)
-                handler(this, new PropertyChangedEventArgs(propertyName));
-            ValidateAsync();
-        }
-
-        public event EventHandler<DataErrorsChangedEventArgs> ErrorsChanged;
-
-        public void OnErrorsChanged(string propertyName)
-        {
-            var handler = ErrorsChanged;
-            if (handler != null)
-                handler(this, new DataErrorsChangedEventArgs(propertyName));
-        }
-
-        public IEnumerable GetErrors(string propertyName)
-        {
-            List<string> errorsForName;
-            _errors.TryGetValue(propertyName, out errorsForName);
-            return errorsForName;
-        }
-
-        public bool HasErrors
-        {
-            get { return _errors.Any(kv => kv.Value != null && kv.Value.Count > 0); }
-        }
-
-        public Task ValidateAsync()
-        {
-            return Task.Run(() => Validate());
-        }
-
-        private object _lock = new object();
-        public void Validate()
-        {
-            lock (_lock)
-            {
-                var validationContext = new ValidationContext(this, null, null);
-                var validationResults = new List<ValidationResult>();
-                Validator.TryValidateObject(this, validationContext, validationResults, true);
-
-                foreach (var kv in _errors.ToList())
-                {
-                    if (validationResults.All(r => r.MemberNames.All(m => m != kv.Key)))
-                    {
-                        List<string> outLi;
-                        _errors.TryRemove(kv.Key, out outLi);
-                        OnErrorsChanged(kv.Key);
-                    }
-                }
-
-                var q = from r in validationResults
-                        from m in r.MemberNames
-                        group r by m into g
-                        select g;
-
-                foreach (var prop in q)
-                {
-                    var messages = prop.Select(r => r.ErrorMessage).ToList();
-
-                    if (_errors.ContainsKey(prop.Key))
-                    {
-                        List<string> outLi;
-                        _errors.TryRemove(prop.Key, out outLi);
-                    }
-                    _errors.TryAdd(prop.Key, messages);
-                    OnErrorsChanged(prop.Key);
-                }
-            }
+                handler.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 
-}
+    }
