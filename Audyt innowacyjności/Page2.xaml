@@ -10,10 +10,10 @@
 
 	<Grid>
 		<TextBox x:Name="NazwaPrzedsiebiorstwa" Text="{Binding NazwaPrzedsiebiorstwa, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
-		<TextBox x:Name="IloscZmian" HorizontalAlignment="Left" Height="23" Margin="391,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
-		<TextBox x:Name="NumerRegon" HorizontalAlignment="Left" Height="23" Margin="391,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
-		<TextBox x:Name="NumerKRS" HorizontalAlignment="Left" Height="23" Margin="391,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
-		<TextBox x:Name="Miasto" HorizontalAlignment="Left" Height="23" Margin="391,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="IloscZmian" Text="{Binding IloscZmian, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="NumerRegon" Text="{Binding NumerRegon, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="NumerKRS" Text="{Binding NumerKRS, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="Miasto" Text="{Binding Miasto, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
 		<Label Content="Nazwa przedsiębiorstwa" HorizontalAlignment="Left" Margin="237,128,0,0" VerticalAlignment="Top" />
 		<Label Content="Ilość  zmian w formie prowadzonej działalności" HorizontalAlignment="Left" Margin="117,156,0,0" VerticalAlignment="Top"/>
 		<Label Content="Nr REGON" HorizontalAlignment="Left" Margin="309,184,0,0" VerticalAlignment="Top"/>
@@ -24,8 +24,10 @@
         <Button Content="Confij" HorizontalAlignment="Left" Margin="573,408,0,0" VerticalAlignment="Top" Width="75" Click="Back"/>
 
         <!--- Pytanie drugie -->
-        <TextBox x:Name="WiekPrzedsiebiorswa" HorizontalAlignment="Left" Height="23" Margin="391,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="WiekPrzedsiebiorswa" Text="{Binding WiekPrzedsiebiorswa, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
         <Label Content="Od ilu lat istnieje przedsiębiorstwo" HorizontalAlignment="Left" Margin="183,268,0,0" VerticalAlignment="Top" />
+        <Label Content="Strona 1/14" HorizontalAlignment="Left" Margin="328,10,0,0" VerticalAlignment="Top"/>
+
 
 
     </Grid>

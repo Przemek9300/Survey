@@ -50,5 +50,40 @@ namespace Audyt_innowacyjności
         {
             this.NavigationService.ONavigate(new Page8(), model);
         }
+
+        private void Pracownicy(object sender, RoutedEventArgs e)
+        {
+            model.Pracownicy = true;
+        }
+
+        private void Konkurenci(object sender, RoutedEventArgs e)
+        {
+            model.Konkurenci = true;
+        }
+
+        private void Klienci(object sender, RoutedEventArgs e)
+        {
+            model.Klienci = true;
+        }
+
+        private void FirmyDoradcze(object sender, RoutedEventArgs e)
+        {
+            model.FirmyDoradcze = true;
+        }
+
+        private void Uczelnie(object sender, RoutedEventArgs e)
+        {
+            model.Uczelnie = true;
+        }
+
+        private void Placowki(object sender, RoutedEventArgs e)
+        {
+            model.Placowki = true;
+        }
+
+        private void Inne(object sender, RoutedEventArgs e)
+        {
+            model.Inne = true;
+        }
     }
 }

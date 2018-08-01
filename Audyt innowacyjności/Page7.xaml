@@ -11,6 +11,21 @@
     <Grid>
         <Button Content="Dalej" HorizontalAlignment="Left" Margin="653,408,0,0" VerticalAlignment="Top" Width="75" Click="Next"/>
         <Button Content="Confij" HorizontalAlignment="Left" Margin="573,408,0,0" VerticalAlignment="Top" Width="75" Click="Back"/>
+        <TextBox x:Name="ProcesoweLiczba" Text="{Binding ProcesoweLiczba, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="456,131,-211,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="55" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="ProcesoweKomentarz" Text="{Binding ProcesoweKomentarz, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="90,156,-211,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="421" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="ProduktoweLiczba" Text="{Binding ProduktoweLiczba, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="456,184,-211,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="55" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="ProduktoweKomentarz" Text="{Binding ProduktoweKomentarz, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="90,212,-211,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="421" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="OrgnizacyjneLiczba" Text="{Binding OrgnizacyjneLiczba, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="456,240,-211,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="55" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="OrgnizacyjneKomentarz" Text="{Binding OrgnizacyjneKomentarz, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="90,268,-211,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="421" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="MarketingoweLiczba" Text="{Binding MarketingoweLiczba, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="456,296,-211,-19" TextWrapping="Wrap" VerticalAlignment="Top" Width="55" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="MarketingoweKomentarz" Text="{Binding MarketingoweKomentarz, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="90,324,-211,-47" TextWrapping="Wrap" VerticalAlignment="Top" Width="421" RenderTransformOrigin="-1.562,-1.653"/>
+
+        <Label Content="a) procesowe:" HorizontalAlignment="Left" Margin="333,128,-126,0" VerticalAlignment="Top" Width="93" RenderTransformOrigin="-0.111,0.586" />
+        <Label Content="b) produktowe: " HorizontalAlignment="Left" Margin="333,184,-126,0" VerticalAlignment="Top" Width="93"/>
+        <Label Content="c) organizacyjne:" HorizontalAlignment="Left" Margin="333,237,-138,0" VerticalAlignment="Top" Width="105"/>
+        <Label Content="d) marketingowe: " HorizontalAlignment="Left" Margin="333,291,-139,-15" VerticalAlignment="Top" Width="106" />
+        <Label Content="Wprowadzane innowacje w przedsiębiorstwie na przełomie ostatnich 3 lat:" HorizontalAlignment="Left" Margin="78,97,-211,0" VerticalAlignment="Top" Width="433" />
+        <Label Content="Strona 6/14" HorizontalAlignment="Left" Margin="328,10,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Page>

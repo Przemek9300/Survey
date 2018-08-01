@@ -12,6 +12,29 @@
 
         <Button Content="Dalej" HorizontalAlignment="Left" Margin="653,408,0,0" VerticalAlignment="Top" Width="75" Click="Next"/>
         <Button Content="Confij" HorizontalAlignment="Left" Margin="573,408,0,0" VerticalAlignment="Top" Width="75" Click="Back"/>
+        <!--- Pytanie 4,5,6 -->
+        <TextBox x:Name="Obroty" Text="{Binding Obroty, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,99,-211,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="Zysk" Text="{Binding Zysk, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,127,-211,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="AktywaNiematerialne" Text="{Binding AktywaNiematerialne, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,166,-211,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="AktywaMaterialne" Text="{Binding AktywaMaterialne, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,194,-211,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="AktywaPrawne" Text="{Binding AktywaPrawne, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,222,-211,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="ModelBiznesowy" Text="{Binding ModelBiznesowy, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,261,-211,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="ZasiegDzialanosci" Text="{Binding ZasiegDzialanosci, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,292,-211,-15" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="ObszaryDzialanosci" Text="{Binding ObszaryDzialanosci, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,320,-211,-43" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+
+        <Label Content="Stan finansów przedsiębiorstwa w ostatnich latach:" HorizontalAlignment="Left" Margin="99,64,-75,0" VerticalAlignment="Top" Width="276"/>
+
+        <Label Content="Obroty" HorizontalAlignment="Left" Margin="329,94,-75,0" VerticalAlignment="Top" RenderTransformOrigin="1.862,0.719" />
+        <Label Content="Zysk" HorizontalAlignment="Left" Margin="340,124,-73,0" VerticalAlignment="Top"/>
+        <Label Content="Posiadane aktywa niematerialne" HorizontalAlignment="Left" Margin="195,163,-75,0" VerticalAlignment="Top" Width="180"/>
+        <Label Content="Posiadane aktywa materialne" HorizontalAlignment="Left" Margin="212,189,-75,0" VerticalAlignment="Top"/>
+        <Label Content="Posiadane aktywa prawne" HorizontalAlignment="Left" Margin="231,219,-75,0" VerticalAlignment="Top"/>
+        <Label Content="Model biznesowy" HorizontalAlignment="Left" Margin="273,258,-75,0" VerticalAlignment="Top" />
+        <Label Content="Zasięg działalności" HorizontalAlignment="Left" Margin="268,290,-75,-14" VerticalAlignment="Top" />
+        <Label Content="Obszary działalności przedsiębiorstwa" HorizontalAlignment="Left" Margin="162,319,-75,-43" VerticalAlignment="Top" Width="213" />
+
+        <Label Content="Strona 3/14" HorizontalAlignment="Left" Margin="328,10,0,0" VerticalAlignment="Top"/>
+
 
 
     </Grid>

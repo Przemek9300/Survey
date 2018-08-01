@@ -12,5 +12,23 @@
         <Button Content="Dalej" HorizontalAlignment="Left" Margin="653,408,0,0" VerticalAlignment="Top" Width="75" Click="Next"/>
         <Button Content="Confij" HorizontalAlignment="Left" Margin="573,408,0,0" VerticalAlignment="Top" Width="75" Click="Back"/>
 
+        <Label Content="    Z jakich źródeł innowacji korzysta przedsiębiorstwo:" HorizontalAlignment="Left" Margin="74,128,-75,0" VerticalAlignment="Top" />
+        <Label Content="Pracownicy" HorizontalAlignment="Left" Margin="306,156,-75,0" VerticalAlignment="Top"/>
+        <Label Content="Konkurenci" HorizontalAlignment="Left" Margin="310,184,-75,0" VerticalAlignment="Top"/>
+        <Label Content="Klienci" HorizontalAlignment="Left" Margin="330,212,-75,0" VerticalAlignment="Top"/>
+        <Label Content="Firmy doradcze" Margin="280,243,-75,0" VerticalAlignment="Top" />
+        <Label Content="Uczelnie wyższe" HorizontalAlignment="Left" Margin="280,274,-75,0" VerticalAlignment="Top"/>
+        <Label Content="Placówki naukowe" Margin="265,304,-75,-28" VerticalAlignment="Top" />
+        <Label Content="Inne" Margin="341,333,-74,-57" VerticalAlignment="Top" RenderTransformOrigin="5.755,-3.204" />
+        <CheckBox Content="" HorizontalAlignment="Left" Margin="380,162,-180,0" VerticalAlignment="Top" Width="100" Checked="Pracownicy" IsChecked="False"/>
+        <CheckBox Content="" HorizontalAlignment="Left" Margin="380,190,-180,0" VerticalAlignment="Top" Width="100" Checked="Konkurenci" IsChecked="False"/>
+        <CheckBox Content="" HorizontalAlignment="Left" Margin="380,218,-180,0" VerticalAlignment="Top" Width="100" Checked="Klienci" IsChecked="False"/>
+        <CheckBox Content="" HorizontalAlignment="Left" Margin="380,249,-180,0" VerticalAlignment="Top" Width="100" Checked="FirmyDoradcze" IsChecked="False"/>
+        <CheckBox Content="" HorizontalAlignment="Left" Margin="380,280,-180,0" VerticalAlignment="Top" Width="100" Checked="Uczelnie" IsChecked="False"/>
+        <CheckBox Content="" HorizontalAlignment="Left" Margin="380,310,-180,-25" VerticalAlignment="Top" Width="100" Checked="Placowki" IsChecked="False"/>
+        <CheckBox Content="" HorizontalAlignment="Left" Margin="380,339,-180,-54" VerticalAlignment="Top" Width="100" Checked="Inne" IsChecked="False"/>
+        <TextBox x:Name="InneKomentarz" Text="{Binding InneKomentarz, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="341,362,-161,-85" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <Label Content="Strona 8/14" HorizontalAlignment="Left" Margin="328,10,0,0" VerticalAlignment="Top"/>
+
     </Grid>
 </Page>

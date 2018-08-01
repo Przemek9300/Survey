@@ -56,6 +56,7 @@ namespace Audyt_innowacyjności
         public bool KomunikacjaWewnetrzna { get; set; }
         public bool WsparcieInnowacji { get; set; }
         public int Innowacyjnosc { get; set; }
+
         public string ZarzadzanieRelacjami { get; set; }
         public int ZwiazkiFirmy { get; set; }
         public int StosunkiZAgencjami { get; set; }
