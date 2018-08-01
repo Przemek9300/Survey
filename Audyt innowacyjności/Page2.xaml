@@ -14,14 +14,21 @@
 		<TextBox x:Name="NumerRegon" HorizontalAlignment="Left" Height="23" Margin="391,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
 		<TextBox x:Name="NumerKRS" HorizontalAlignment="Left" Height="23" Margin="391,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
 		<TextBox x:Name="Miasto" HorizontalAlignment="Left" Height="23" Margin="391,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
-		<Label Content="Label" HorizontalAlignment="Left" Margin="300,123,0,0" VerticalAlignment="Top" />
-		<Label Content="Label" HorizontalAlignment="Left" Margin="300,156,0,0" VerticalAlignment="Top"/>
-		<Label Content="Label" HorizontalAlignment="Left" Margin="300,181,0,0" VerticalAlignment="Top"/>
-		<Label Content="Label" HorizontalAlignment="Left" Margin="300,207,0,0" VerticalAlignment="Top"/>
-		<Label Content="Label" HorizontalAlignment="Left" Margin="300,240,0,0" VerticalAlignment="Top"/>
-		<Button Content="Button" HorizontalAlignment="Left" Margin="653,408,0,0" VerticalAlignment="Top" Width="75" Click="Next"/>
+		<Label Content="Nazwa przedsiębiorstwa" HorizontalAlignment="Left" Margin="237,128,0,0" VerticalAlignment="Top" />
+		<Label Content="Ilość  zmian w formie prowadzonej działalności" HorizontalAlignment="Left" Margin="117,156,0,0" VerticalAlignment="Top"/>
+		<Label Content="Nr REGON" HorizontalAlignment="Left" Margin="309,184,0,0" VerticalAlignment="Top"/>
+		<Label Content="Numerem wpisu do KRS" HorizontalAlignment="Left" Margin="237,212,0,0" VerticalAlignment="Top"/>
+		<Label Content="Miasto" HorizontalAlignment="Left" Margin="328,240,0,0" VerticalAlignment="Top"/>
+		
+        <Button Content="Dalej" HorizontalAlignment="Left" Margin="653,408,0,0" VerticalAlignment="Top" Width="75" Click="Next"/>
+        <Button Content="Confij" HorizontalAlignment="Left" Margin="573,408,0,0" VerticalAlignment="Top" Width="75" Click="Back"/>
 
-	</Grid>
+        <!--- Pytanie drugie -->
+        <TextBox x:Name="WiekPrzedsiebiorswa" HorizontalAlignment="Left" Height="23" Margin="391,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <Label Content="Od ilu lat istnieje przedsiębiorstwo" HorizontalAlignment="Left" Margin="183,268,0,0" VerticalAlignment="Top" />
+
+
+    </Grid>
 	
 	
 	

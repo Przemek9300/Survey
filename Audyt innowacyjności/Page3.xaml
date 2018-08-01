@@ -9,6 +9,25 @@
       Title="Page3">
 
     <Grid>
-        
+
+        <Button Content="Dalej" HorizontalAlignment="Left" Margin="653,408,0,0" VerticalAlignment="Top" Width="75" Click="Next"/>
+        <Button Content="Confij" HorizontalAlignment="Left" Margin="573,408,0,0" VerticalAlignment="Top" Width="75" Click="Back"/>
+
+        <TextBox x:Name="IloscUmowOPrace" Text="{Binding IloscUmowOPrace, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="IloscUmowCywilnoPrawnych" HorizontalAlignment="Left" Height="23" Margin="391,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="IloscPracownikowSezonowych" HorizontalAlignment="Left" Height="23" Margin="391,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="ZmianyWStrukturze" HorizontalAlignment="Left" Height="23" Margin="391,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="PoziomWyksztalcenia" HorizontalAlignment="Left" Height="23" Margin="391,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <Label Content="Umowa o pracę" HorizontalAlignment="Left" Margin="281,128,0,0" VerticalAlignment="Top" />
+        <Label Content="Liczba zatrudnionych pracowników:" HorizontalAlignment="Left" Margin="178,77,0,0" VerticalAlignment="Top" />
+        <Label Content="Umowa cywilno prawna" HorizontalAlignment="Left" Margin="238,156,0,0" VerticalAlignment="Top"/>
+        <Label Content="Pracownicy sezonowi" HorizontalAlignment="Left" Margin="252,184,0,0" VerticalAlignment="Top"/>
+        <Label Content="Zmiany w strukturze i ilości zatrudnionych" HorizontalAlignment="Left" Margin="142,212,0,0" VerticalAlignment="Top"/>
+        <Label Content="Przeciętny poziom wykształcenia pracownikow" HorizontalAlignment="Left" Margin="118,237,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="StazPracy" HorizontalAlignment="Left" Height="23" Margin="391,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <Label Content="Przeciętny staż pracy" HorizontalAlignment="Left" Margin="254,263,0,0" VerticalAlignment="Top" />
+        <TextBox x:Name="WiekZatrudnienia" HorizontalAlignment="Left" Height="23" Margin="391,299,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <Label Content="Średni wiek zatrudnionych" HorizontalAlignment="Left" Margin="225,296,0,0" VerticalAlignment="Top" />
+
     </Grid>
 </Page>

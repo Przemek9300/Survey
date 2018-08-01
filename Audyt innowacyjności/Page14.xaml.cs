@@ -20,13 +20,13 @@ using System.Windows.Shapes;
 namespace Audyt_innowacyjności
 {
     /// <summary>
-    /// Interaction logic for Page2.xaml
+    /// Logika interakcji dla klasy Page14.xaml
     /// </summary>
-    public partial class Page2 : Page
+    public partial class Page14 : Page
     {
         public SurveyViewModel model { get; set; }
 
-        public Page2()
+        public Page14()
         {
             this.DataContext = this.NavigationService.GetData();
             model = this.DataContext as SurveyViewModel;
@@ -44,12 +44,11 @@ namespace Audyt_innowacyjności
 
         private void Next(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.ONavigate(new Page3(), model);
+            this.NavigationService.ONavigate(new Page15(), model);
         }
-
         private void Back(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.ONavigate(new Page1(), model);
+            this.NavigationService.ONavigate(new Page13(), model);
         }
     }
 }
