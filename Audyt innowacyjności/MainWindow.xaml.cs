@@ -61,5 +61,14 @@ namespace Audyt_innowacyjności
         {
             frame.NavigationService.Navigate(new Page1());
         }
+        private void Maxmalize(object sender, RoutedEventArgs e)
+        {
+            if(this.WindowState == WindowState.Normal)
+                this.WindowState = WindowState.Maximized;
+            else
+                this.WindowState = WindowState.Normal;
+
+
+        }
     }
 }

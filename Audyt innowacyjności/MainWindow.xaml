@@ -19,10 +19,13 @@
 
 	<Grid>
 		<Button Click="Exit" VerticalAlignment="Top"  HorizontalAlignment="Right" Background="Red" BorderBrush="Red">
-			<materialDesign:PackIcon Kind="Close" Height="17" Width="16" ></materialDesign:PackIcon>
+			<materialDesign:PackIcon Kind="WindowClose" Height="17" Width="16" ></materialDesign:PackIcon>
 		</Button>
-		<Button Click="Minimalize" VerticalAlignment="Top"  HorizontalAlignment="Right" Margin="0,0,53,0" >
-			<materialDesign:PackIcon Kind="Minus" Height="17" Width="16" ></materialDesign:PackIcon>
+			<Button Click="Maxmalize" VerticalAlignment="Top"  HorizontalAlignment="Right" Background="#FF47AC3D" BorderBrush="#FF6CA830" Margin="0,0,48,0">
+			<materialDesign:PackIcon Kind="WindowMaximize" Height="17" Width="16" ></materialDesign:PackIcon>
+		</Button>
+		<Button Click="Minimalize" VerticalAlignment="Top"  HorizontalAlignment="Right" Margin="0,0,96,0" >
+			<materialDesign:PackIcon Kind="WindowMinimize" Height="17" Width="16" ></materialDesign:PackIcon>
 		</Button>
 		<Button Click="Home" VerticalAlignment="Bottom"  HorizontalAlignment="Left" Margin="0,0,53,0" >
 			<materialDesign:PackIcon Kind="Home" Height="17" Width="16" ></materialDesign:PackIcon>
