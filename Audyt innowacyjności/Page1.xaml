@@ -9,15 +9,22 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Page1">
 
-	<Grid>
+    <Grid>
 
 
 
-		<Button Content="Sprawdź wynik" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Height="100" Margin="472,176,128,174" Click="Btn2"/>
-
-		<Button   HorizontalAlignment="Center"  VerticalAlignment="Center" Width="200" RenderTransformOrigin="-0.494,-0.531" Height="100" Click="Btn1" Margin="170,176,430,174">
-			<materialDesign:PackIcon Kind="Play" ></materialDesign:PackIcon>
+		<Button   HorizontalAlignment="Center"  VerticalAlignment="Center" Width="200" RenderTransformOrigin="-0.494,-0.531" Height="100" Click="Btn1" Margin="10,176,590,174">
+			<materialDesign:PackIcon Kind="Play" Height="54" Width="74" ></materialDesign:PackIcon>
 		</Button>
+		<Button  HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Height="100" Margin="302,176,298,174" Click="Btn2">
+			<materialDesign:PackIcon Kind="ImageFilterFrames" Height="38" Width="118" ></materialDesign:PackIcon>
+		</Button>
+
+		<Button  HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Height="100" Margin="584,176,16,174" Click="Btn3">
+			<materialDesign:PackIcon Kind="ChartHistogram" Height="38" Width="118" ></materialDesign:PackIcon>
+		</Button>
+
+
 		<materialDesign:Card Padding="32" Margin="16" materialDesign:ColorZoneAssist.Mode="PrimaryLight">
 
 			<TextBlock VerticalAlignment="Center" Style="{DynamicResource MaterialDesignTitleTextBlock}">AUDYT INOWACYJNOŚCI</TextBlock>
