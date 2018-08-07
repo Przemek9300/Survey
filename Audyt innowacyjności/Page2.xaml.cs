@@ -34,7 +34,7 @@ namespace Audyt_innowacyjności
 
         private void Next(object sender, RoutedEventArgs e)
         {
-            if(model.IsValid)
+            
                 this.NavigationService.ONavigate(new Page3(), model);
         }
 

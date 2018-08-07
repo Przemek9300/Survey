@@ -47,5 +47,19 @@ namespace Audyt_innowacyjności
         {
             frame.NavigationService.ONavigate(new Page1(), (SurveyViewModel)this.DataContext);
         }
+        private void Exit(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+
+        }
+        private void Minimalize(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Minimized;
+
+        }
+        private void Home(object sender, RoutedEventArgs e)
+        {
+            frame.NavigationService.Navigate(new Page1());
+        }
     }
 }

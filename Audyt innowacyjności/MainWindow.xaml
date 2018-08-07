@@ -12,12 +12,24 @@
 		 TextElement.FontWeight="Medium"
         TextElement.FontSize="24"
         FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
+			  xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
 		 WindowStyle="None">
 
 
 
 	<Grid>
-		<Frame x:Name="frame" Content="Frame" HorizontalAlignment="Center"  VerticalAlignment="Center"  Navigated="frame_Navigated" Margin="0,10,0,0" NavigationUIVisibility="Hidden"/>
+		<Button Click="Exit" VerticalAlignment="Top"  HorizontalAlignment="Right" Background="Red" BorderBrush="Red">
+			<materialDesign:PackIcon Kind="Close" Height="17" Width="16" ></materialDesign:PackIcon>
+		</Button>
+		<Button Click="Minimalize" VerticalAlignment="Top"  HorizontalAlignment="Right" Margin="0,0,53,0" >
+			<materialDesign:PackIcon Kind="Minus" Height="17" Width="16" ></materialDesign:PackIcon>
+		</Button>
+		<Button Click="Home" VerticalAlignment="Bottom"  HorizontalAlignment="Left" Margin="0,0,53,0" >
+			<materialDesign:PackIcon Kind="Home" Height="17" Width="16" ></materialDesign:PackIcon>
+		</Button>
+		<Frame x:Name="frame" Content="Frame" HorizontalAlignment="Center"  VerticalAlignment="Center"  Navigated="frame_Navigated" NavigationUIVisibility="Hidden">
+
+		</Frame>
 
 	</Grid>
 </Window>
