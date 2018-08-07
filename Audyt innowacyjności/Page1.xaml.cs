@@ -42,7 +42,7 @@ namespace Audyt_innowacyjności
         {
             var model = this.NavigationService.GetData();
 
-            this.NavigationService.ONavigate(new Result(), model);
+            this.NavigationService.Navigate(new Charts());
         }
     }
 }

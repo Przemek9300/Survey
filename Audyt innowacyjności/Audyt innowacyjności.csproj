@@ -67,6 +67,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Charts.xaml.cs">
+      <DependentUpon>Charts.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Mapper\AutoMapper.cs" />
     <Compile Include="Migrations\201807312151208_All properties.cs" />
     <Compile Include="Migrations\201807312151208_All properties.Designer.cs">
@@ -121,6 +124,10 @@
     </Compile>
     <Compile Include="ViewModel\ModelBase.cs" />
     <Compile Include="ViewModel\SurveyViewModel.cs" />
+    <Page Include="Charts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
