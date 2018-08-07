@@ -32,11 +32,7 @@ namespace Audyt_innowacyjności
             model = this.DataContext as SurveyViewModel;
             InitializeComponent();
 
-            using (var context = new SurveyContext())
-            {
-                context.Surveys.Add(AutoMapper.Map(model));
-                context.SaveChanges();
-            }
+            
         }
 
 
