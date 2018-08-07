@@ -6,11 +6,14 @@
         xmlns:local="clr-namespace:Audyt_innowacyjności"
         mc:Ignorable="d"
         Title="MainWindow" 
-		WindowState="Maximized"
 		Loaded="Window_Loaded"
-
+		TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+		 Background="{DynamicResource MaterialDesignPaper}"
+		 TextElement.FontWeight="Medium"
+        TextElement.FontSize="24"
+        FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
 		 WindowStyle="None">
-	
+
 
 
 	<Grid>
