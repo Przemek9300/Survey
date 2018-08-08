@@ -1,64 +1,52 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Concurrent;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
 using System.Threading.Tasks;
+using GalaSoft.MvvmLight;
+using MvvmValidation;
 
 namespace Audyt_innowacyjności.ViewModel
 {
-    public class ValidationBase : INotifyDataErrorInfo, INotifyPropertyChanged
+    public abstract class ValidatableViewModelBase : ViewModelBase, IValidatable, INotifyDataErrorInfo
     {
-        private Dictionary<string, List<string>> _errors = new Dictionary<string, List<string>>();
+        protected ValidationHelper Validator { get; }
 
-        public event EventHandler<DataErrorsChangedEventArgs> ErrorsChanged;
+        private NotifyDataErrorInfoAdapter NotifyDataErrorInfoAdapter { get; }
 
-        // get errors by property
+        protected ValidatableViewModelBase()
+        {
+            Validator = new ValidationHelper();
+
+            NotifyDataErrorInfoAdapter = new NotifyDataErrorInfoAdapter(Validator);
+            NotifyDataErrorInfoAdapter.ErrorsChanged += OnErrorsChanged;
+        }
+
+        private void OnErrorsChanged(object sender, DataErrorsChangedEventArgs e)
+        {
+            // Notify the UI that the property has changed so that the validation error gets displayed (or removed).
+            RaisePropertyChanged(e.PropertyName);
+        }
+
+        Task<ValidationResult> IValidatable.Validate()
+        {
+            return Validator.ValidateAllAsync();
+        }
+
+        #region Implementation of INotifyDataErrorInfo
+
         public IEnumerable GetErrors(string propertyName)
         {
-            if (_errors.ContainsKey(propertyName))
-                return _errors[propertyName];
-            return null;
+            return NotifyDataErrorInfoAdapter.GetErrors(propertyName);
         }
 
-        public bool HasErrors => _errors.Count > 0;
+        public bool HasErrors => NotifyDataErrorInfoAdapter.HasErrors;
 
-        // object is valid
-        public bool IsValid => !HasErrors;
-
-        public void AddError(string propertyName, string error)
+        public event EventHandler<DataErrorsChangedEventArgs> ErrorsChanged
         {
-            // Add error to list
-            _errors[propertyName] = new List<string>() { error };
-            NotifyErrorsChanged(propertyName);
+            add { NotifyDataErrorInfoAdapter.ErrorsChanged += value; }
+            remove { NotifyDataErrorInfoAdapter.ErrorsChanged -= value; }
         }
 
-        public void RemoveError(string propertyName)
-        {
-            // remove error
-            if (_errors.ContainsKey(propertyName))
-                _errors.Remove(propertyName);
-            NotifyErrorsChanged(propertyName);
-        }
-
-        public void NotifyErrorsChanged(string propertyName)
-        {
-            // Notify
-            if (ErrorsChanged != null)
-                ErrorsChanged(this, new DataErrorsChangedEventArgs(propertyName));
-        }
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        public void RaisePropertyChanged(string propertyName)
-        {
-            PropertyChangedEventHandler handler = PropertyChanged;
-            if (handler != null)
-                handler.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
+        #endregion
     }
-
-    }
+}

@@ -1,32 +1,53 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using System.Text;
+using GalaSoft.MvvmLight.Command;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+
+using MvvmValidation;
+using System.Windows.Input;
 
 namespace Audyt_innowacyjności.ViewModel
 {
-     public class SurveyViewModel: ValidationBase
+     public class SurveyViewModel: ValidatableViewModelBase
     {
+        private string validationErrorsString;
+        private bool? isValid;
+        public ICommand ValidateCommand { get; private set; }
+        public SurveyViewModel()
+        {
+            ValidateCommand = new RelayCommand(Validate);
+            Validator = new ValidationHelper();
+            ConfigureValidationRules();
+            Validator.ResultChanged += OnValidationResultChanged;
+        }
+        protected ValidationHelper Validator { get; private set; }
         private string nazwaPrzedsiebiorstwa;
-        [Display(Name = "First Name")]
-        [Required]
-        [StringLength(20)]
+
         public string NazwaPrzedsiebiorstwa
         {
             get { return nazwaPrzedsiebiorstwa; }
             set
             {
                 nazwaPrzedsiebiorstwa = value;
-                Validation();
-    {
+            
+                RaisePropertyChanged(nameof(NazwaPrzedsiebiorstwa));
+                Validator.ValidateAsync(nameof(NazwaPrzedsiebiorstwa));
+
+                {
 
                    
                 }
 
+            }
+        }
+          public string ValidationErrorsString
+        {
+            get { return validationErrorsString; }
+            private set
+            {
+                validationErrorsString = value;
+                RaisePropertyChanged(nameof(ValidationErrorsString));
             }
         }
         public int IloscZmian { get; set; }
@@ -253,43 +274,54 @@ namespace Audyt_innowacyjności.ViewModel
 
         ///////////27//////////////////////////////////////////////////////////
 
-        public string RoznicaProduktow { get; set; }
-
-
-
-        private object _lock = new object();
-        private Dictionary<string, List<string>> _errors =
-         new Dictionary<string, List<string>>();
-
-        private void Validation()
+        public bool? IsValid
         {
-            lock (_lock)
+            get { return isValid; }
+            private set
             {
-                //Validate Name
-                List<string> errorsForName;
-                if (!_errors.TryGetValue("NazwaPrzedsiebiorstwa", out errorsForName))
-                    errorsForName = new List<string>();
-                else errorsForName.Clear();
-
-                if (String.IsNullOrEmpty(NazwaPrzedsiebiorstwa))
-                    errorsForName.Add("The name can't be null or empty.");
-
-                _errors["NazwaPrzedsiebiorstwa"] = errorsForName;
-                if (errorsForName.Count > 0) RaiseErrorsChanged("NazwaPrzedsiebiorstwa");
-
-  
-    
+                isValid = value;
+                RaisePropertyChanged(nameof(IsValid));
             }
         }
 
-        public event EventHandler<DataErrorsChangedEventArgs> ErrorsChanged;
-        public void RaiseErrorsChanged(string propertyName)
+        public string RoznicaProduktow { get; set; }
+
+        private void ConfigureValidationRules()
         {
-            EventHandler<DataErrorsChangedEventArgs> handler = ErrorsChanged;
-            if (handler == null) return;
-            var arg = new DataErrorsChangedEventArgs(propertyName);
-            handler.Invoke(this, arg);
+            Validator.AddRequiredRule(() => NazwaPrzedsiebiorstwa, "User Name is required");
+
+        }
+      
+
+        private async void Validate()
+        {
+            await ValidateAsync();
         }
 
+        private async Task ValidateAsync()
+        {
+            var result = await Validator.ValidateAllAsync();
+
+            UpdateValidationSummary(result);
+        }
+
+        private void OnValidationResultChanged(object sender, ValidationResultChangedEventArgs e)
+        {
+            if (!IsValid.GetValueOrDefault(true))
+            {
+                MvvmValidation.ValidationResult validationResult = Validator.GetResult();
+
+                UpdateValidationSummary(validationResult);
+            }
+        }
+
+        private void UpdateValidationSummary(ValidationResult validationResult)
+        {
+            IsValid = validationResult.IsValid;
+            ValidationErrorsString = validationResult.ToString();
+        }
     }
+
+
 }
+
