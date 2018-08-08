@@ -19,105 +19,79 @@ namespace Audyt_innowacyjności.Mapper
                 Miasto = model.Miasto,
                 NumerKRS = model.NumerKRS,
                 NumerRegon = model.NumerRegon,
-                //2
                 WiekPrzedsiebiorstwa = model.WiekPrzedsiebiorstwa,
-                
-       PoziomWyksztalcenia = model.PoziomWyksztalcenia,
-        StazPracy = model.StazPracy,
-        WiekZatrudnienia = model.WiekZatrudnienia,
-
-        ////4/////////////////////////////////////////////////////////////////////
-
+                IloscPracownikow = model.IloscPracownikow,
+                PoziomWyksztalcenia = model.PoziomWyksztalcenia,
+                StazPracy = model.StazPracy,
+                WiekZatrudnienia = model.WiekZatrudnienia,
                 Obroty = model.Obroty,
-         Zysk = model.Zysk,
-         AktywaNiematerialne = model.AktywaNiematerialne,
-         AktywaMaterialne = model.AktywaMaterialne,
-         AktywaPrawne = model.AktywaPrawne,
-
-        /////5////////////////////////////////////////////////////////////////////
-
+                Zysk = model.Zysk,
+                AktywaNiematerialne = model.AktywaNiematerialne,
+                AktywaMaterialne = model.AktywaMaterialne,
+                AktywaPrawne = model.AktywaPrawne,
                 ZasiegDzialanosci = model.ZasiegDzialanosci,
-
-
-        //////6///////////////////////////////////////////////////////////////////
-
-
-        ///////7//////////////////////////////////////////////////////////////////
-
                 SzczebleHierarchiPionowej = model.SzczebleHierarchiPionowej,
-        KoordynacjaPracy = model.KoordynacjaPracy,
-         KoordynacjaPracyKomentarz = model.KoordynacjaPracyKomentarz,
-         PracaZespolowa = model.PracaZespolowa,
-         WsparcieInnowacji = model.WsparcieInnowacji,
-         Innowacyjnosc = model.Innowacyjnosc,
-         ZwiazkiFirmy = model.ZwiazkiFirmy,
-         StosunkiZAgencjami = model.StosunkiZAgencjami,
-         StosunkiZInstytucjami = model.StosunkiZInstytucjami,
+                KoordynacjaPracy = model.KoordynacjaPracy,
+                KoordynacjaPracyKomentarz = model.KoordynacjaPracyKomentarz,
+                PracaZespolowa = model.PracaZespolowa,
+                WsparcieInnowacji = model.WsparcieInnowacji,
+                Innowacyjnosc = model.Innowacyjnosc,
+                ZwiazkiFirmy = model.ZwiazkiFirmy,
+                StosunkiZAgencjami = model.StosunkiZAgencjami,
+                StosunkiZInstytucjami = model.StosunkiZInstytucjami,
 
-        ////////8/////////////////////////////////////////////////////////////////
+                ////////8/////////////////////////////////////////////////////////////////
 
                 ProcesoweLiczba = model.ProcesoweLiczba,
-         ProcesoweKomentarz = model.ProcesoweKomentarz,
-         ProduktoweLiczba = model.ProduktoweLiczba,
-         ProduktoweKomentarz = model.ProduktoweKomentarz,
-         OrgnizacyjneLiczba = model.OrgnizacyjneLiczba,
-         OrgnizacyjneKomentarz = model.OrgnizacyjneKomentarz,
-         MarketingoweLiczba = model.MarketingoweLiczba,
-         MarketingoweKomentarz = model.MarketingoweKomentarz,
+                ProcesoweKomentarz = model.ProcesoweKomentarz,
+                ProduktoweLiczba = model.ProduktoweLiczba,
+                ProduktoweKomentarz = model.ProduktoweKomentarz,
+                OrgnizacyjneLiczba = model.OrgnizacyjneLiczba,
+                OrgnizacyjneKomentarz = model.OrgnizacyjneKomentarz,
+                MarketingoweLiczba = model.MarketingoweLiczba,
+                MarketingoweKomentarz = model.MarketingoweKomentarz,
 
 
-        /////////9////////////////////////////////////////////////////////////////
 
                 BarieryWewnetrzne = model.BarieryWewnetrzne,
-         BarieryZewnetrzne = model.BarieryZewnetrzne,
+                BarieryZewnetrzne = model.BarieryZewnetrzne,
 
-        //////////10///////////////////////////////////////////////////////////////
 
                 MocneStrony = model.MocneStrony,
-         SlabeStrony = model.SlabeStrony,
-         Szanse = model.Szanse,
-         Zagrozenia = model.Zagrozenia,
+                SlabeStrony = model.SlabeStrony,
+                Szanse = model.Szanse,
+                Zagrozenia = model.Zagrozenia,
 
-        ////////////11/////////////////////////////////////////////////////////////
 
                 Pracownicy = model.Pracownicy,
-         Konkurenci = model.Konkurenci,
-         Klienci = model.Klienci,
-         FirmyDoradcze = model.FirmyDoradcze,
-         Uczelnie = model.Uczelnie,
-         Placowki = model.Placowki,
-         Inne = model.Inne,
-         InneKomentarz = model.InneKomentarz,
+                Konkurenci = model.Konkurenci,
+                Klienci = model.Klienci,
+                FirmyDoradcze = model.FirmyDoradcze,
+                Uczelnie = model.Uczelnie,
+                Placowki = model.Placowki,
+                Inne = model.Inne,
+                InneKomentarz = model.InneKomentarz,
 
-        //////////////12///////////////////////////////////////////////////////////
+                PoszerzenieOferty = model.PoszerzenieOferty,
+                UlatwienieDzialanProdukcyjnych = model.UlatwienieDzialanProdukcyjnych,
+                PoprawaJakosciUslug = model.PoprawaJakosciUslug,
+                WzrostPrestizu = model.WzrostPrestizu,
+                NoweKontakty = model.NoweKontakty,
+                ZmniejszenieKosztow = model.ZmniejszenieKosztow,
+                OdpowiedziDoKlientow = model.OdpowiedziDoKlientow,
+                PomiarStopniaInnowacyjnosci = model.PomiarStopniaInnowacyjnosci,
+                PomiarStopniaInnowacyjnosciKomentarz = model.PomiarStopniaInnowacyjnosciKomentarz,
 
                 // PraceBadawcze= model.PraceBadawcze,
                 PraceBadawczeKomentarz = model.PraceBadawczeKomentarz,
-
-        ////////////////13/////////////////////////////////////////////////////////
-
+                
                 KoloLubOrganizacja = model.KoloLubOrganizacja,
          KoloLubOrganizacjaKomentarz = model.KoloLubOrganizacjaKomentarz,
-        //////////////////14///////////////////////////////////////////////////////
 
          CertyfikatJakosci = model.CertyfikatJakosci,
          CertyfikatJakosciKomentarz = model.CertyfikatJakosciKomentarz,
-
-
-                //DziałaniaInnowacyjne= model.
-
-
-                
-
-                //NajwiecejKorzysci = model.
-           
-
-
-
-                PomiarStopniaInnowacyjnosci = model.PomiarStopniaInnowacyjnosci,
-
-   
-        
+         PomiarStopniaSwiadczonychUslug = model.PomiarStopniaSwiadczonychUslug,
+         PomiarStopniaSwiadczonychUslugKomentarz = model.PomiarStopniaSwiadczonychUslugKomentarz,
 
                 WyrobFirmy1 = model.WyrobFirmy1,
         WyrobFirmy2 = model.WyrobFirmy2,
@@ -131,16 +105,20 @@ namespace Audyt_innowacyjności.Mapper
          WyrobFirmy10 = model.WyrobFirmy10,
 
 
+         RynekUsług = model.RynekUsług,
+         //PerpektywaRozwoju = model.PerpektywaRozwoju,
+         StrategiaRozwoju = model.StrategiaRozwoju,
+         CenyWStosunkuDoKonkurencji = model.CenyWStosunkuDoKonkurencji,
+         PrzewagaKonkurencyjna = model.PrzewagaKonkurencyjna,
+         KonkurentISubstytuty = model.KonkurentISubstytuty,
+         RozniceProduktow = model.RozniceProduktow,
+         RozbudowaOferty = model.RozbudowaOferty,
+         LepszaPromocja = model.LepszaPromocja,
+         ModernizacjaZaplecza = model.ModernizacjaZaplecza,
+         NoweOprogramowanie = model.NoweOprogramowanie,
+         InneDzialania = model.InneDzialania,
+         InneDzialaniaKomentarz = model.InneDzialaniaKomentarz
 
-        
-
-                StrategiaRozwoju = model.StrategiaRozwoju,
-       
-
-            
-
-
-                PrzewagaKonkurencyjna = model.PrzewagaKonkurencyjna,
 
             };
         }
