@@ -67,15 +67,7 @@ namespace Audyt_innowacyjności
             model.PracaZespolowa = false;
         }
 
-        private void KomunikacjaWewnetrznaTAK(object sender, RoutedEventArgs e)
-        {
-            model.KomunikacjaWewnetrzna = true;
-        }
-
-        private void KomunikacjaWewnetrznaNIE(object sender, RoutedEventArgs e)
-        {
-            model.KomunikacjaWewnetrzna = false;
-        }
+        
 
         private void WsparcieInnowacjiTAK(object sender, RoutedEventArgs e)
         {

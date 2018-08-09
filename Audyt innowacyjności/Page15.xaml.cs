@@ -17,6 +17,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace Audyt_innowacyjności
 {
     /// <summary>
@@ -42,7 +43,7 @@ namespace Audyt_innowacyjności
         {
             using (var context = new SurveyContext())
             {
-                context.Surveys.Add(AutoMapper.Map(model));
+                context.Surveys.Add(Mapper.AutoMapper.Map(model));
                 context.SaveChanges();
             }
 

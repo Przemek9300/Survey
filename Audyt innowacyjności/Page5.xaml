@@ -21,9 +21,7 @@
         <RadioButton GroupName="PracaZespolowa" Content="TAK" IsChecked="True" Margin="398,218,-152,65" Checked="PracaZespolowaTAK"/>
         <RadioButton GroupName="PracaZespolowa" Content="NIE" Margin="457,218,-211,65" Checked="PracaZespolowaNIE"/>
 
-        <RadioButton GroupName="KomunikacjaWewnetrzna" Content="TAK" IsChecked="True" Margin="398,246,-152,37" Checked="KomunikacjaWewnetrznaTAK" RenderTransformOrigin="0.5,0.506"/>
-        <RadioButton GroupName="KomunikacjaWewnetrzna" Content="NIE" Margin="457,246,-211,37" Checked="KomunikacjaWewnetrznaNIE"/>
-
+        
         <RadioButton GroupName="WsparcieInnowacji" Content="TAK" IsChecked="True" Margin="398,274,-152,9" Checked="WsparcieInnowacjiTAK"/>
         <RadioButton GroupName="WsparcieInnowacji" Content="NIE" Margin="457,274,-211,9" Checked="WsparcieInnowacjiNIE"/>
         <TextBox x:Name="Innowacyjnosc" Text="{Binding Innowacyjnosc, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="398,296,-218,-19" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>

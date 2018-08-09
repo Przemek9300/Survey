@@ -118,7 +118,7 @@ namespace Audyt_innowacyjności.Mapper
          NoweOprogramowanie = model.NoweOprogramowanie,
          InneDzialania = model.InneDzialania,
          InneDzialaniaKomentarz = model.InneDzialaniaKomentarz
-
+          
 
             };
         }
