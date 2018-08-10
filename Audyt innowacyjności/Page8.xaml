@@ -5,30 +5,31 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Audyt_innowacyjności"
       mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="300"
+      d:DesignHeight="450" d:DesignWidth="800"
       Title="Page8">
 
     <Grid>
         <Button Content="Dalej" HorizontalAlignment="Left" Margin="653,408,0,0" VerticalAlignment="Top" Width="75" Click="Next"/>
         <Button Content="Confij" HorizontalAlignment="Left" Margin="573,408,0,0" VerticalAlignment="Top" Width="75" Click="Back"/>
 
-        <TextBox x:Name="BarieryWewnetrzne" Text="{Binding BarieryWewnetrzne, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,128,-211,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
-        <TextBox x:Name="BarieryZewnetrzne" Text="{Binding BarieryZewnetrzne, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,156,-211,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
-        <TextBox x:Name="MocneStrony" Text="{Binding MocneStrony, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,214,-211,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
-        <TextBox x:Name="SlabeStrony" Text="{Binding SlabeStrony, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,242,-211,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
-        <TextBox x:Name="Szanse" Text="{Binding Szanse, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,270,-211,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
-        <TextBox x:Name="Zagrozenia" Text="{Binding Zagrozenia, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,298,-211,-21" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
-
-        <Label Content="Jakie bariery wpływają na wolniejszy  rozwój i innowacyjność przedsiębiorstwa:" HorizontalAlignment="Left" Margin="-50,102,-75,0" VerticalAlignment="Top" Width="425" />
-
-        <Label Content="a) Wewnętrzne ( występujące bezpośrednio w przedsiębiorstwie)" HorizontalAlignment="Left" Margin="25,128,-75,0" VerticalAlignment="Top" Width="350" />
-        <Label Content="b) Zewnętrzne ( związane z otoczeniem przedsiębiorstwa)" HorizontalAlignment="Left" Margin="63,156,-75,0" VerticalAlignment="Top" Width="312"/>
-        <Label Content="        SWOT przedsiębiorstwa: ( proszę wymienić min. po 2 w każdym obszarze)" HorizontalAlignment="Left" Margin="-50,184,-75,0" VerticalAlignment="Top" Width="425"/>
-        <Label Content="a) Mocne strony przedsiębiorstwa:" HorizontalAlignment="Left" Margin="183,212,-75,0" VerticalAlignment="Top" Width="192"/>
-        <Label Content="  b) Słabe strony przedsiębiorstwa: " HorizontalAlignment="Left" Margin="184,239,-75,0" VerticalAlignment="Top" Width="191"/>
-        <Label Content="c)Szanse przedsiębiorstwa: " HorizontalAlignment="Left" Margin="223,267,-74,0" VerticalAlignment="Top" Width="151" />
-        <Label Content="  d) Zagrożenia dla przedsiębiorstwa:" HorizontalAlignment="Left" Margin="171,295,-75,-19" VerticalAlignment="Top" Width="204" />
         <Label Content="Strona 7/14" HorizontalAlignment="Left" Margin="328,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="WprowadzoneInnowacje" Text="{Binding WprowadzoneInnowacje, Mode=TwoWay, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="NowePomysły" Text="{Binding NowePomysły, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="ZyskiNoweWyroby" Text="{Binding ZyskiNoweWyroby, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="ZyskiInnowacjeInne" Text="{Binding ZyskiInnowacjeInne, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="DlugoscCykli" Text="{Binding DlugoscCykli, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <Label Content="Liczba wprowadzonych innowacji" HorizontalAlignment="Left" Margin="199,128,0,0" VerticalAlignment="Top" Width="187" />
+        <Label Content="Liczba nowych pomysłów generowanych rocznie" HorizontalAlignment="Left" Margin="118,156,0,0" VerticalAlignment="Top" Width="268"/>
+        <Label Content="Zyski uzyskane z wdrożenia nowych wyrobów na rynek (zł)" HorizontalAlignment="Left" Margin="69,184,0,0" VerticalAlignment="Top" Width="317"/>
+        <Label Content="Zyski uzyskane dzięki innowacjom innym niż nowe wyroby (zł)" HorizontalAlignment="Left" Margin="47,212,0,0" VerticalAlignment="Top" Width="339"/>
+        <Label Content="Długość trwania cykli prac wdrożeniowych i rozwojowych" HorizontalAlignment="Left" Margin="69,240,0,0" VerticalAlignment="Top" Width="317"/>
+        <TextBox x:Name="WydatkiInnowacyjnosc" Text="{Binding WydatkiInnowacyjnosc, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <Label Content="Wysokość wydatków przeznaczonych na innowacyjność" HorizontalAlignment="Left" Margin="82,268,0,0" VerticalAlignment="Top" Width="304" />
+        <TextBox x:Name="SredniaIloscPomyslow" Text="{Binding SredniaIloscPomyslow, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,296,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <Label Content="Średnia ilość pomysłów na jednego pracownika" HorizontalAlignment="Left" Margin="118,295,0,0" VerticalAlignment="Top" Width="268"/>
+        <TextBox x:Name="SklonnoscDoRyzyka" Text="{Binding SklonnoscDoRyzyka, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,323,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <Label Content="Skłonność do podejmowania ryzyka" HorizontalAlignment="Left" Margin="183,323,0,0" VerticalAlignment="Top" />
+        <Label Content="Wskaźniki innowacji" HorizontalAlignment="Left" Margin="309,36,0,0" VerticalAlignment="Top" Width="116"/>
 
     </Grid>
 </Page>

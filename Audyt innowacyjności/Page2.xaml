@@ -9,13 +9,15 @@
       Title="Page2">
 
 	<Grid>
-		<TextBox x:Name="NazwaPrzedsiebiorstwa" Text="{Binding NazwaPrzedsiebiorstwa, Mode=TwoWay, ValidatesOnDataErrors=True,NotifyOnValidationError=True}" HorizontalAlignment="Left" Height="23" Margin="391,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
-        <TextBox x:Name="IloscZmian" Text="{Binding IloscZmian, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <Label Content="Informacje ogólne" HorizontalAlignment="Left" Margin="309,41,0,0" VerticalAlignment="Top" />
+
+        <TextBox x:Name="NazwaPrzedsiebiorstwa" Text="{Binding NazwaPrzedsiebiorstwa, Mode=TwoWay, ValidatesOnDataErrors=True,NotifyOnValidationError=True}" HorizontalAlignment="Left" Height="23" Margin="391,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="Branza" Text="{Binding IloscZmian, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
         <TextBox x:Name="NumerRegon" Text="{Binding NumerRegon, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
         <TextBox x:Name="NumerKRS" Text="{Binding NumerKRS, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
         <TextBox x:Name="Miasto" Text="{Binding Miasto, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
-		<Label Content="Nazwa przedsiębiorstwa" HorizontalAlignment="Left" Margin="237,128,0,0" VerticalAlignment="Top" />
-		<Label Content="Ilość  zmian w formie prowadzonej działalności" HorizontalAlignment="Left" Margin="117,156,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nazwa przedsiębiorstwa" HorizontalAlignment="Left" Margin="237,128,0,0" VerticalAlignment="Top" />
+        <Label Content="Branża" HorizontalAlignment="Left" Margin="330,156,0,0" VerticalAlignment="Top"/>
 		<Label Content="Nr REGON" HorizontalAlignment="Left" Margin="309,184,0,0" VerticalAlignment="Top"/>
 		<Label Content="Numerem wpisu do KRS" HorizontalAlignment="Left" Margin="237,212,0,0" VerticalAlignment="Top"/>
 		<Label Content="Miasto" HorizontalAlignment="Left" Margin="328,240,0,0" VerticalAlignment="Top"/>

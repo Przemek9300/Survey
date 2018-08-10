@@ -32,11 +32,7 @@ namespace Audyt_innowacyjności
             model = this.DataContext as SurveyViewModel;
             InitializeComponent();
 
-            using (var context = new SurveyContext())
-            {
-                context.Surveys.Add(AutoMapper.Map(model));
-                context.SaveChanges();
-            }
+            
         }
 
 
@@ -51,44 +47,6 @@ namespace Audyt_innowacyjności
             this.NavigationService.ONavigate(new Page4(), model);
         }
 
-        private void KoordynacjaPracyTAK(object sender, RoutedEventArgs e)
-        {
-            model.KoordynacjaPracy = true;
-        }
-
-        private void KoordynacjaPracyNIE(object sender, RoutedEventArgs e)
-        {
-            model.KoordynacjaPracy = false;
-        }
-
-        private void PracaZespolowaTAK(object sender, RoutedEventArgs e)
-        {
-            model.PracaZespolowa = true;
-        }
-
-        private void PracaZespolowaNIE(object sender, RoutedEventArgs e)
-        {
-            model.PracaZespolowa = false;
-        }
-
-        private void KomunikacjaWewnetrznaTAK(object sender, RoutedEventArgs e)
-        {
-            model.KomunikacjaWewnetrzna = true;
-        }
-
-        private void KomunikacjaWewnetrznaNIE(object sender, RoutedEventArgs e)
-        {
-            model.KomunikacjaWewnetrzna = false;
-        }
-
-        private void WsparcieInnowacjiTAK(object sender, RoutedEventArgs e)
-        {
-            model.WsparcieInnowacji = true;
-        }
-
-        private void WsparcieInnowacjiNIE(object sender, RoutedEventArgs e)
-        {
-            model.WsparcieInnowacji = false;
-        }
+        
     }
 }

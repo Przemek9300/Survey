@@ -17,6 +17,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace Audyt_innowacyjności
 {
     /// <summary>
@@ -32,11 +33,7 @@ namespace Audyt_innowacyjności
             model = this.DataContext as SurveyViewModel;
             InitializeComponent();
 
-            using (var context = new SurveyContext())
-            {
-                context.Surveys.Add(AutoMapper.Map(model));
-                context.SaveChanges();
-            }
+            
         }
 
 
@@ -44,6 +41,12 @@ namespace Audyt_innowacyjności
 
         private void Next(object sender, RoutedEventArgs e)
         {
+            using (var context = new SurveyContext())
+            {
+                context.Surveys.Add(Mapper.AutoMapper.Map(model));
+                context.SaveChanges();
+            }
+
             this.NavigationService.ONavigate(new Page1(), model);
         }
         private void Back(object sender, RoutedEventArgs e)

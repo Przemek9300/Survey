@@ -5,13 +5,21 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Audyt_innowacyjności"
       mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="300"
+      d:DesignHeight="450" d:DesignWidth="800"
       Title="Page11">
 
     <Grid>
         <Button Content="Dalej" HorizontalAlignment="Left" Margin="653,408,0,0" VerticalAlignment="Top" Width="75" Click="Next"/>
         <Button Content="Confij" HorizontalAlignment="Left" Margin="573,408,0,0" VerticalAlignment="Top" Width="75" Click="Back"/>
         <Label Content="Strona 10/14" HorizontalAlignment="Left" Margin="328,10,0,0" VerticalAlignment="Top"/>
+
+        <Label Content="Czy w Pana(i) firmie prowadzone są działania w zakresie pomiaru stopnia innowacyjności organizacji?" HorizontalAlignment="Left" Margin="51,158,0,0" VerticalAlignment="Top" Width="365" Height="27"/>
+        <TextBox x:Name="PomiarStopniaInnowacyjnosciKomentarz" Text="{Binding KoordynacjaPracyKomentarz, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="50,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="486" RenderTransformOrigin="-1.562,-1.653"/>
+        <RadioButton GroupName="PomiarStopniaInnowacyjnosci" Content="TAK" IsChecked="True" Margin="416,163,293,286.6" Checked="PomiarStopniaInnowacyjnosciTAK"/>
+        <RadioButton GroupName="PomiarStopniaInnowacyjnosci" Content="NIE" Margin="475,163,239,286.6" Checked="PomiarStopniaInnowacyjnosciNIE"/>
+
+
+
 
     </Grid>
 </Page>

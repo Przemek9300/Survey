@@ -21,7 +21,7 @@ namespace Audyt_innowacyjności
     /// </summary>
     public partial class Result : Page
     {
-        int i = 0;
+        
         List<string> result;
         string wynik;
         public Result()

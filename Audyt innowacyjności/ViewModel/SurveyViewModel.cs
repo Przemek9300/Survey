@@ -50,59 +50,46 @@ namespace Audyt_innowacyjności.ViewModel
                 RaisePropertyChanged(nameof(ValidationErrorsString));
             }
         }
-        public int IloscZmian { get; set; }
+        public int Id { get; set; }
+        public string Branza { get; set; }
         public int NumerRegon { get; set; }
         public int NumerKRS { get; set; }
         public string Miasto { get; set; }
-        //2///////////////////////////////////////////////////////////////////////
-
         public int WiekPrzedsiebiorstwa { get; set; }
 
-        ///3//////////////////////////////////////////////////////////////////////
+        ///2//////////////////////////////////////////////////////////////////////
 
-        public int IloscUmowOPrace { get; set; }
-        public int IloscUmowCywilnoPrawnych { get; set; }
-        public int IloscPracownikowSezonowych { get; set; }
-        public string ZmianyWStrukturze { get; set; } //-Zmiany w strukturze i ilości zatrudnionych: - varchar50
+        public int IloscPracownikow { get; set; }
         public string PoziomWyksztalcenia { get; set; }
         public int StazPracy { get; set; }
         public int WiekZatrudnienia { get; set; }
 
-        ////4/////////////////////////////////////////////////////////////////////
+        ////3/////////////////////////////////////////////////////////////////////
 
         public int Obroty { get; set; }
         public int Zysk { get; set; }
         public int AktywaNiematerialne { get; set; }
         public int AktywaMaterialne { get; set; }
         public int AktywaPrawne { get; set; }
-        public string ModelBiznesowy { get; set; }
 
-        /////5////////////////////////////////////////////////////////////////////
+        /////4////////////////////////////////////////////////////////////////////
 
         public string ZasiegDzialanosci { get; set; }
-
-
-        //////6///////////////////////////////////////////////////////////////////
-
-        public string ObszaryDzialanosci { get; set; }
-
-        ///////7//////////////////////////////////////////////////////////////////
-
         public int SzczebleHierarchiPionowej { get; set; }
+
+        ///////5//////////////////////////////////////////////////////////////////
+
         public bool KoordynacjaPracy { get; set; }
         public string KoordynacjaPracyKomentarz { get; set; }
         public bool PracaZespolowa { get; set; }
-        public bool KomunikacjaWewnetrzna { get; set; }
         public bool WsparcieInnowacji { get; set; }
         public int Innowacyjnosc { get; set; }
-        public string ZarzadzanieRelacjami { get; set; }
+
         public int ZwiazkiFirmy { get; set; }
         public int StosunkiZAgencjami { get; set; }
-        public int RelacjeIOB { get; set; }
         public int StosunkiZInstytucjami { get; set; }
-        public string RelacjeZInstytucjami { get; set; }
 
-        ////////8/////////////////////////////////////////////////////////////////
+        ////////6/////////////////////////////////////////////////////////////////
 
         public int ProcesoweLiczba { get; set; }
         public string ProcesoweKomentarz { get; set; }
@@ -114,104 +101,64 @@ namespace Audyt_innowacyjności.ViewModel
         public string MarketingoweKomentarz { get; set; }
 
 
-        /////////9////////////////////////////////////////////////////////////////
+        /////////7////////////////////////////////////////////////////////////////
+
+        public int WprowadzoneInnowacje { get; set; }
+        public int NowePomysły { get; set; }
+        public int ZyskiNoweWyroby { get; set; }
+        public int ZyskiInnowacjeInne { get; set; }
+        public int DlugoscCykli { get; set; }
+        public int WydatkiInnowacyjnosc { get; set; }
+        public int SredniaIloscPomyslow { get; set; }
+        public int SklonnoscDoRyzyka { get; set; }
+
+
+        ////////8////////////////////////////////////////////////////////////////
+
+        public bool Pracownicy { get; set; }
+        public bool Konkurenci { get; set; }
+        public bool Klienci { get; set; }
+        public bool FirmyDoradcze { get; set; }
+        public bool Uczelnie { get; set; }
+        public bool Placowki { get; set; }
+        public bool Inne { get; set; }
+        public string InneKomentarz { get; set; }
+
+        public bool PoszerzenieOferty { get; set; }
+        public bool UlatwienieDzialanProdukcyjnych { get; set; }
+        public bool PoprawaJakosciUslug { get; set; }
+        public bool WzrostPrestizu { get; set; }
+        public bool NoweKontakty { get; set; }
+        public bool ZmniejszenieKosztow { get; set; }
+        public bool OdpowiedziDoKlientow { get; set; }
+
+        public bool PomiarStopniaInnowacyjnosci { get; set; }
+        public string PomiarStopniaInnowacyjnosciKomentarz { get; set; }
+        //////////////9///////////////////////////////////////////////////////////
 
         public string BarieryWewnetrzne { get; set; }
         public string BarieryZewnetrzne { get; set; }
 
-        //////////10///////////////////////////////////////////////////////////////
+        //////////////10///////////////////////////////////////////////////////////
 
         public string MocneStrony { get; set; }
         public string SlabeStrony { get; set; }
         public string Szanse { get; set; }
         public string Zagrozenia { get; set; }
 
-        ////////////11/////////////////////////////////////////////////////////////
+        //////////////11///////////////////////////////////////////////////////////
 
-        public bool Pracownicy { get; set; }
-        public string PracownicyKomentarz { get; set; }
-        public bool Konkurenci { get; set; }
-        public string KonkurencjiKomentarz { get; set; }
-        public bool Klienci { get; set; }
-        public string KlienciKomentarz { get; set; }
-        public bool FirmyDoradcze { get; set; }
-        public string FirmyDoradczeKomentarz { get; set; }
-        public bool Uczelnie { get; set; }
-        public string UczelnieKomentarz { get; set; }
-        public bool Placowki { get; set; }
-        public string PlacowkiKomentarz { get; set; }
-        public bool Inne { get; set; }
-        public string InneKomentarz { get; set; }
-
-        //////////////12///////////////////////////////////////////////////////////
-
-        public Enum PraceBadawcze { get; set; }
+        //public Enum PraceBadawcze { get; set; }
         public string PraceBadawczeKomentarz { get; set; }
-
-        ////////////////13/////////////////////////////////////////////////////////
-
         public bool KoloLubOrganizacja { get; set; }
         public string KoloLubOrganizacjaKomentarz { get; set; }
-
-        //////////////////14///////////////////////////////////////////////////////
-
         public bool CertyfikatJakosci { get; set; }
         public string CertyfikatJakosciKomentarz { get; set; }
+        public bool PomiarStopniaSwiadczonychUslug { get; set; }
+        public string PomiarStopniaSwiadczonychUslugKomentarz { get; set; }
 
-        /////15////////////////////////////////////////////////////////////////////
+        ///12//////////////////////////////////////////////////////////////////////
 
-        public bool Badania { get; set; }
-        public string BadaniaKomentarz { get; set; }
-        public string CzasTrwaniaBadan { get; set; }
-        public bool BadaniaNaRozwoj { get; set; }
-        public string BadaniaNaRozwojKomentarz { get; set; }
-
-        ///16/////////////////////////////////////////////////////////////////////
-
-        public Enum DziałaniaInnowacyjne { get; set; }
-
-
-        //////17///////////////////////////////////////////////////////////////
-
-        public Enum NajwiecejKorzysci { get; set; }
-        public string InneNazwa { get; set; }
-
-        ///////18//////////////////////////////////////////////////////////////
-
-        public bool PomiarStopniaInnowacyjnosci { get; set; }
-
-        ////////19/////////////////////////////////////////////////////////////
-
-        public bool NowechProdukty { get; set; }
-        public int LiczbaNowychProduktow { get; set; }
-        public bool WielkoscSprzedazy { get; set; }
-        public int ProcentowaWielkoscSprzedazy { get; set; }
-        public bool SprzedazInne { get; set; }
-        public int WartoscSprzedazy { get; set; }
-        public bool Zyski { get; set; }
-        public int WartoscZyskow { get; set; }
-        public bool NowePomysly { get; set; }
-        public int LiczbaNowychPomyslow { get; set; }
-        public bool NieudaneProjekty { get; set; }
-        public int LiczbaNieudanychProjektow { get; set; }
-        public bool CzyObliczanyCzas { get; set; }
-        public int Czas { get; set; }
-        public bool ZgloszeniaPatentowe { get; set; }
-        public int LiczbaZgloszenPatentowych { get; set; }
-        public bool PlanowaneProjekty { get; set; }
-        public int LiczbaPlanowanychProjektow { get; set; }
-        public bool OdrzuconeProjekty { get; set; }
-        public int LiczbaOdrzuconychProjektow { get; set; }
-        public bool PracownicyZNowymiPomyslami { get; set; }
-        public int LiczbaPracownikowZNowymiPomyslami { get; set; }
-        public bool NowePomyslySrednia { get; set; }
-        public int LiczbaNowychPomyslowSrednia { get; set; }
-        public bool CzasNaInnowacyjnosc { get; set; }
-        public int IleCzasuNaInnowacyjnosc { get; set; }
-        public bool InneWskazniki { get; set; }
-        public int WartoscInnych { get; set; }
-
-        //////20///////////////////////////////////////////////////////////////
 
         public string WyrobFirmy1 { get; set; }
         public string WyrobFirmy2 { get; set; }
@@ -223,56 +170,24 @@ namespace Audyt_innowacyjności.ViewModel
         public string WyrobFirmy8 { get; set; }
         public string WyrobFirmy9 { get; set; }
         public string WyrobFirmy10 { get; set; }
-        public int Wartosc1 { get; set; }
-        public int Wartosc2 { get; set; }
-        public int Wartosc3 { get; set; }
-        public int Wartosc4 { get; set; }
-        public int Wartosc5 { get; set; }
-        public int Wartosc6 { get; set; }
-        public int Wartosc7 { get; set; }
-        public int Wartosc8 { get; set; }
-        public int Wartosc9 { get; set; }
-        public int Wartosc10 { get; set; }
 
-
-        ///////21//////////////////////////////////////////////////////////////
-
-        public string OdbiorcaUslug { get; set; }
-        public string RelacjeFirmy { get; set; }
-        public string UzytkownikKoncowy { get; set; }
-        public string PotrzebyProduktow { get; set; }
-        public string PowodyWyboruProduktow { get; set; }
-
-        ///////22//////////////////////////////////////////////////////////////
-
-        public string RynekUslug { get; set; }
-        public string PerspektywaRozwoju { get; set; }
-
-        ///////23//////////////////////////////////////////////////////////////
-
+        public string RynekUsług { get; set; }
+        //public Enum PerpektywaRozwoju { get; set; } Do wyboru: Wschodzący, schyłkowy, stabilny, niestabilny
         public string StrategiaRozwoju { get; set; }
-        public bool IstnienieStrategi { get; set; }
-        public string Strategia { get; set; }
-
-        ////////24/////////////////////////////////////////////////////////////
-
-        public string Ceny { get; set; }
-        public string UstalanieCen { get; set; }
-        public int Marza { get; set; }
-        public int ZyskownoscBranzy { get; set; }
-        public int ZyskownoscFirmy { get; set; }
-
-        //////////25///////////////////////////////////////////////////////////
-
+        public string CenyWStosunkuDoKonkurencji { get; set; }
         public string PrzewagaKonkurencyjna { get; set; }
+        public string KonkurentISubstytuty { get; set; }
+        public string RozniceProduktow { get; set; }
 
-        ////////////26/////////////////////////////////////////////////////////
 
-        public string Konkurent { get; set; }
-        public string OferantSybtytuty { get; set; }
-        public string PotrzebySybtytutow { get; set; }
+        ///13/////////////////////
 
-        ///////////27//////////////////////////////////////////////////////////
+        public bool RozbudowaOferty { get; set; }
+        public bool LepszaPromocja { get; set; }
+        public bool ModernizacjaZaplecza { get; set; }
+        public bool NoweOprogramowanie { get; set; }
+        public bool InneDzialania { get; set; }
+        public string InneDzialaniaKomentarz { get; set; }
 
         public bool? IsValid
         {

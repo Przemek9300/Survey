@@ -32,11 +32,7 @@ namespace Audyt_innowacyjności
             model = this.DataContext as SurveyViewModel;
             InitializeComponent();
 
-            using (var context = new SurveyContext())
-            {
-                context.Surveys.Add(AutoMapper.Map(model));
-                context.SaveChanges();
-            }
+            
         }
 
 
@@ -49,6 +45,41 @@ namespace Audyt_innowacyjności
         private void Back(object sender, RoutedEventArgs e)
         {
             this.NavigationService.ONavigate(new Page9(), model);
+        }
+
+        private void PoszerzenieOferty(object sender, RoutedEventArgs e)
+        {
+            model.PoszerzenieOferty = true;
+        }
+
+        private void UlatwienieDzialanProdukcyjnych(object sender, RoutedEventArgs e)
+        {
+            model.UlatwienieDzialanProdukcyjnych = true;
+        }
+
+        private void PoprawaJakosciUslug(object sender, RoutedEventArgs e)
+        {
+            model.PoprawaJakosciUslug = true;
+        }
+
+        private void WzrostPrestizu(object sender, RoutedEventArgs e)
+        {
+            model.WzrostPrestizu = true;
+        }
+
+        private void NoweKontakty(object sender, RoutedEventArgs e)
+        {
+            model.NoweKontakty = true;
+        }
+
+        private void ZmniejszenieKosztow(object sender, RoutedEventArgs e)
+        {
+            model.ZmniejszenieKosztow = true;
+        }
+
+        private void OdpowiedziDoKlientow(object sender, RoutedEventArgs e)
+        {
+            model.OdpowiedziDoKlientow = true;
         }
     }
 }

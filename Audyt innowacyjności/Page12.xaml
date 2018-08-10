@@ -5,13 +5,31 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Audyt_innowacyjności"
       mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="300"
+      d:DesignHeight="450" d:DesignWidth="800"
       Title="Page12">
 
     <Grid>
         <Button Content="Dalej" HorizontalAlignment="Left" Margin="653,408,0,0" VerticalAlignment="Top" Width="75" Click="Next"/>
         <Button Content="Confij" HorizontalAlignment="Left" Margin="573,408,0,0" VerticalAlignment="Top" Width="75" Click="Back"/>
         <Label Content="Strona 11/14" HorizontalAlignment="Left" Margin="328,10,0,0" VerticalAlignment="Top"/>
+
+
+        <TextBox x:Name="BarieryWewnetrzne" Text="{Binding BarieryWewnetrzne, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="444,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="BarieryZewnetrzne" Text="{Binding BarieryZewnetrzne, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="444,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="MocneStrony" Text="{Binding MocneStrony, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="444,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="SlabeStrony" Text="{Binding SlabeStrony, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="444,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="Szanse" Text="{Binding Szanse, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="444,272,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="Zagrozenia" Text="{Binding Zagrozenia, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="444,299,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+
+        <Label Content="Jakie bariery wpływają na wolniejszy  rozwój i innowacyjność przedsiębiorstwa:" HorizontalAlignment="Left" Margin="3,103,0,0" VerticalAlignment="Top" Width="425" />
+
+        <Label Content="a) Wewnętrzne ( występujące bezpośrednio w przedsiębiorstwie)" HorizontalAlignment="Left" Margin="78,129,0,0" VerticalAlignment="Top" Width="350" />
+        <Label Content="b) Zewnętrzne ( związane z otoczeniem przedsiębiorstwa)" HorizontalAlignment="Left" Margin="116,157,0,0" VerticalAlignment="Top" Width="312"/>
+        <Label Content="        SWOT przedsiębiorstwa: ( proszę wymienić min. po 2 w każdym obszarze)" HorizontalAlignment="Left" Margin="3,185,0,0" VerticalAlignment="Top" Width="425"/>
+        <Label Content="a) Mocne strony przedsiębiorstwa:" HorizontalAlignment="Left" Margin="236,213,0,0" VerticalAlignment="Top" Width="192"/>
+        <Label Content="  b) Słabe strony przedsiębiorstwa: " HorizontalAlignment="Left" Margin="237,240,0,0" VerticalAlignment="Top" Width="191"/>
+        <Label Content="c)Szanse przedsiębiorstwa: " HorizontalAlignment="Left" Margin="276,268,0,0" VerticalAlignment="Top" Width="151" />
+        <Label Content="  d) Zagrożenia dla przedsiębiorstwa:" HorizontalAlignment="Left" Margin="224,296,0,0" VerticalAlignment="Top" Width="204" />
 
     </Grid>
 </Page>

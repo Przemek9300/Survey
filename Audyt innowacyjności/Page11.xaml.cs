@@ -32,11 +32,7 @@ namespace Audyt_innowacyjności
             model = this.DataContext as SurveyViewModel;
             InitializeComponent();
 
-            using (var context = new SurveyContext())
-            {
-                context.Surveys.Add(AutoMapper.Map(model));
-                context.SaveChanges();
-            }
+            
         }
 
 
@@ -49,6 +45,16 @@ namespace Audyt_innowacyjności
         private void Back(object sender, RoutedEventArgs e)
         {
             this.NavigationService.ONavigate(new Page10(), model);
+        }
+
+        private void PomiarStopniaInnowacyjnosciTAK(object sender, RoutedEventArgs e)
+        {
+            model.PomiarStopniaInnowacyjnosci = true;
+        }
+
+        private void PomiarStopniaInnowacyjnosciNIE(object sender, RoutedEventArgs e)
+        {
+            model.PomiarStopniaInnowacyjnosci = false;
         }
     }
 }
