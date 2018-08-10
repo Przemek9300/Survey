@@ -4,8 +4,8 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Audyt_innowacyjności"
-      mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="300"
+      mc:Ignorable="d"
+      d:DesignHeight="450" d:DesignWidth="800"
       Title="Page6">
 
     <Grid>
@@ -13,21 +13,36 @@
         <Button Content="Dalej" HorizontalAlignment="Left" Margin="653,408,0,0" VerticalAlignment="Top" Width="75" Click="Next"/>
         <Button Content="Confij" HorizontalAlignment="Left" Margin="573,408,0,0" VerticalAlignment="Top" Width="75" Click="Back"/>
 
-        <TextBox x:Name="ZarzadzanieRelacjami" Text="{Binding ZarzadzanieRelacjami, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,128,-211,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
-        <TextBox x:Name="ZwiazkiFirmy" Text="{Binding ZwiazkiFirmy, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,156,-211,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
-        <TextBox x:Name="StosunkiZAgencjami" Text="{Binding StosunkiZAgencjami, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,184,-211,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
-        <TextBox x:Name="RelacjeIOB" Text="{Binding RelacjeIOB, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,212,-211,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
-        <TextBox x:Name="StosunkiZInstytucjami" Text="{Binding StosunkiZInstytucjami, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,245,-211,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
-        <TextBox x:Name="RelacjeZInstytucjami" Text="{Binding RelacjeZInstytucjami, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,273,-211,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <Label Content="Czy istnieją i jakie są mechanizmy zapewniające koordynację pracy?" HorizontalAlignment="Left" Margin="10,156,0,0" VerticalAlignment="Top" Width="365" Height="27"/>
+        <TextBox x:Name="KoordynacjaPracyKomentarz" Text="{Binding KoordynacjaPracyKomentarz, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <RadioButton GroupName="KoordynacjaPracy" Content="TAK" IsChecked="True" Margin="391,162,318,305" Checked="KoordynacjaPracyTAK"/>
+        <RadioButton GroupName="KoordynacjaPracy" Content="NIE" Margin="450,162,264,304" Checked="KoordynacjaPracyNIE"/>
 
-        <Label Content="Jak zarządzamy relacjami? " HorizontalAlignment="Left" Margin="226,128,-75,0" VerticalAlignment="Top" Width="149" />
-        <Label Content="Na ile dobre są związki firmy z dostawcami i klientami?[1-5]" HorizontalAlignment="Left" Margin="50,156,-75,0" VerticalAlignment="Top" Width="325"/>
-        <Label Content="Na ile dobre stosunki są z agencjami rządowymi?[1-5]" HorizontalAlignment="Left" Margin="78,184,-75,0" VerticalAlignment="Top" Width="297"/>
-        <Label Content="Jak układają się relacje z IOB?[1-5]" HorizontalAlignment="Left" Margin="183,212,-75,0" VerticalAlignment="Top" Width="192"/>
-        <Label Content="Na ile dobre stosunki ma firma z instytucjami naukowymi i edukacyjnymi?[1-5]" HorizontalAlignment="Left" Margin="-50,240,-74,0" VerticalAlignment="Top" Width="424"/>
-        <Label Content="Jakie relacje wiążą firmę z instytucjami finansowymi? " HorizontalAlignment="Left" Margin="90,268,-75,0" VerticalAlignment="Top" Width="285" />
+        <Label Content="Czy promowana jest praca zespołowa?" HorizontalAlignment="Left" Margin="161,215,0,0" VerticalAlignment="Top" Width="214" Height="26"/>
+        <RadioButton GroupName="PracaZespolowa" Content="TAK" IsChecked="True" Margin="391,218,313,248" Checked="PracaZespolowaTAK"/>
+        <RadioButton GroupName="PracaZespolowa" Content="NIE" Margin="450,218,262,248" Checked="PracaZespolowaNIE"/>
+
+        <Label Content="Czy kierownictwo najwyższego szczebla wspiera innowacje?" HorizontalAlignment="Left" Margin="51,273,0,0" VerticalAlignment="Top" Width="324" Height="27" />
+        <RadioButton GroupName="WsparcieInnowacji" Content="TAK" IsChecked="True" Margin="391,273,318,188" Checked="WsparcieInnowacjiTAK"/>
+        <RadioButton GroupName="WsparcieInnowacji" Content="NIE" Margin="448,273,264,192" Checked="WsparcieInnowacjiNIE"/>
+
+        <Label Content=" Na ile innowacyjność stała się sposobem 'życia' w firmie?[1-5] " HorizontalAlignment="Left" Margin="36,300,0,0" VerticalAlignment="Top" Width="339" Height="25" />
+        <TextBox x:Name="Innowacyjnosc" Text="{Binding Innowacyjnosc, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,296,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+
+
+
+
+
+        <TextBox x:Name="ZwiazkiFirmy" Text="{Binding ZwiazkiFirmy, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,324,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="StosunkiZAgencjami" Text="{Binding StosunkiZAgencjami, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,357,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="StosunkiZInstytucjami" Text="{Binding StosunkiZInstytucjami, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+
+        <Label Content="Na ile dobre są związki firmy z dostawcami i klientami?[1-5]" HorizontalAlignment="Left" Margin="50,325,0,0" VerticalAlignment="Top" Width="325" Height="27"/>
+        <Label Content="Na ile dobre stosunki są z agencjami rządowymi?[1-5]" HorizontalAlignment="Left" Margin="78,357,0,0" VerticalAlignment="Top" Width="297" Height="27"/>
+        <Label Content="Na ile dobre stosunki ma firma z instytucjami naukowymi i edukacyjnymi?[1-5]" HorizontalAlignment="Left" Margin="-49,244,0,0" VerticalAlignment="Top" Width="424" Height="27"/>
 
         <Label Content="Strona 5/14" HorizontalAlignment="Left" Margin="328,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Dodatkowe dane o przedsiębiorstwie II" HorizontalAlignment="Left" Margin="268,36,0,0" VerticalAlignment="Top" Width="222"/>
 
     </Grid>
 </Page>

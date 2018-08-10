@@ -46,5 +46,15 @@ namespace Audyt_innowacyjności
         {
             this.NavigationService.ONavigate(new Page10(), model);
         }
+
+        private void PomiarStopniaInnowacyjnosciTAK(object sender, RoutedEventArgs e)
+        {
+            model.PomiarStopniaInnowacyjnosci = true;
+        }
+
+        private void PomiarStopniaInnowacyjnosciNIE(object sender, RoutedEventArgs e)
+        {
+            model.PomiarStopniaInnowacyjnosci = false;
+        }
     }
 }

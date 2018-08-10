@@ -9,7 +9,7 @@
       Title="Page2">
 
 	<Grid>
-        <Label Content="Informacje ogólne" HorizontalAlignment="Left" Margin="293,66,0,0" VerticalAlignment="Top" />
+        <Label Content="Informacje ogólne" HorizontalAlignment="Left" Margin="309,41,0,0" VerticalAlignment="Top" />
 
         <TextBox x:Name="NazwaPrzedsiebiorstwa" Text="{Binding NazwaPrzedsiebiorstwa, Mode=TwoWay, ValidatesOnDataErrors=True,NotifyOnValidationError=True}" HorizontalAlignment="Left" Height="23" Margin="391,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
         <TextBox x:Name="Branza" Text="{Binding IloscZmian, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>

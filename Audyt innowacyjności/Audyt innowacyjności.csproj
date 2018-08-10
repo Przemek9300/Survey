@@ -108,6 +108,10 @@
     <Compile Include="Migrations\201808010441102_mapping + literowka.Designer.cs">
       <DependentUpon>201808010441102_mapping + literowka.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201808100657041_new question.cs" />
+    <Compile Include="Migrations\201808100657041_new question.Designer.cs">
+      <DependentUpon>201808100657041_new question.cs</DependentUpon>
+    </Compile>
     <Compile Include="Page10.xaml.cs">
       <DependentUpon>Page10.xaml</DependentUpon>
     </Compile>
@@ -273,6 +277,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201808010441102_mapping + literowka.resx">
       <DependentUpon>201808010441102_mapping + literowka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808100657041_new question.resx">
+      <DependentUpon>201808100657041_new question.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

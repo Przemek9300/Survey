@@ -4,8 +4,8 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Audyt_innowacyjności"
-      mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="300"
+      mc:Ignorable="d"
+      d:DesignHeight="450" d:DesignWidth="800"
       Title="Page7">
 
     <Grid>
@@ -24,8 +24,8 @@
         <Label Content="b) produktowe: " HorizontalAlignment="Left" Margin="333,184,-126,0" VerticalAlignment="Top" Width="93"/>
         <Label Content="c) organizacyjne:" HorizontalAlignment="Left" Margin="333,237,-138,0" VerticalAlignment="Top" Width="105"/>
         <Label Content="d) marketingowe: " HorizontalAlignment="Left" Margin="333,291,-139,-15" VerticalAlignment="Top" Width="106" />
-        <Label Content="Wprowadzane innowacje w przedsiębiorstwie na przełomie ostatnich 3 lat:" HorizontalAlignment="Left" Margin="78,97,-211,0" VerticalAlignment="Top" Width="433" />
         <Label Content="Strona 6/14" HorizontalAlignment="Left" Margin="328,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Wprowadzane innowacje w przedsiębiorstwie na przełomie ostatnich 3 lat:" HorizontalAlignment="Left" Margin="162,36,0,0" VerticalAlignment="Top" Width="405"/>
 
     </Grid>
 </Page>
