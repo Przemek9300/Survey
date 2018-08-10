@@ -3,13 +3,32 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:Audyt_innowacyjności"
+	  xmlns:WpfCharts="clr-namespace:WpfCharts;assembly=WpfCharts"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Charts">
 
-    <Grid>
-		
-		<TextBlock > Wykres </TextBlock>
-    </Grid>
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*" />
+			<RowDefinition Height="Auto" />
+		</Grid.RowDefinitions>
+		<WpfCharts:SpiderChart Title="Spider chart"  
+                               Lines="{Binding Lines}" 
+                               Axis="{Binding Axes}" 
+                               Minimum="0" 
+                               Maximum="1" 
+                               Ticks="5" 
+                               ShowLegend="True" 
+                               LegendLocation="BottomRight"
+                               LegendBackgroundColor="Red" Height="600" Width="600" VerticalAlignment="Bottom" Grid.RowSpan="2" />
+		<Button x:Name="AddLine" 
+                HorizontalAlignment="Right"
+                Margin="5"
+                Padding="5"
+                Grid.Row="1"
+                Content="Add line" 
+                Click="AddLineClick" RenderTransformOrigin="0.496,2.4" />
+
+	</Grid>
 </Page>

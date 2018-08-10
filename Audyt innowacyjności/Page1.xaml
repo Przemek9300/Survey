@@ -7,6 +7,10 @@
 	  xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
+	   Background="{DynamicResource MaterialDesignPaper}"
+		 TextElement.FontWeight="Medium"
+        TextElement.FontSize="24"
+        FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
       Title="Page1">
 
     <Grid>
@@ -27,7 +31,7 @@
 
 		<materialDesign:Card Padding="32" Margin="16" materialDesign:ColorZoneAssist.Mode="PrimaryMid">
 
-			<TextBlock VerticalAlignment="Center" Style="{DynamicResource MaterialDesignTitleTextBlock}">AUDYT INOWACYJNOŚCI</TextBlock>
+			<TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Style="{DynamicResource MaterialDesignTitleTextBlock}">AUDYT INNOWACYJNOŚCI</TextBlock>
 
 		</materialDesign:Card>
 	</Grid>
