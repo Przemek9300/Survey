@@ -13,6 +13,19 @@ namespace Audyt_innowacyjności.ViewModel
     {
         private string validationErrorsString;
         private bool? isValid;
+
+
+
+
+
+
+        private string nazwaPrzedsiebiorstwa;
+        private string branza;
+
+
+
+
+
         public ICommand ValidateCommand { get; private set; }
         public SurveyViewModel()
         {
@@ -22,8 +35,7 @@ namespace Audyt_innowacyjności.ViewModel
             Validator.ResultChanged += OnValidationResultChanged;
         }
         protected ValidationHelper Validator { get; private set; }
-        private string nazwaPrzedsiebiorstwa;
-        private string branza;
+
 
 
 
@@ -39,7 +51,6 @@ namespace Audyt_innowacyjności.ViewModel
 
                 {
 
-                   
                 }
 
             }
@@ -225,8 +236,8 @@ namespace Audyt_innowacyjności.ViewModel
 
         private void ConfigureValidationRules()
         {
-            Validator.AddRequiredRule(() => NazwaPrzedsiebiorstwa, "Nazwa Przedesiebiorstwa jest wymagana");
-            Validator.AddRequiredRule(() => Branza, "Nazwa Branży jest wymagana");
+            Validator.AddRequiredRule(() => NazwaPrzedsiebiorstwa, "Nazwa przedesiebiorstwa jest wymagana");
+            Validator.AddRequiredRule(() => Branza, "Nazwa branży jest wymagana");
 
 
         }
