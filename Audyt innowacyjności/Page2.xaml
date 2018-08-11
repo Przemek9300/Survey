@@ -29,6 +29,7 @@
         <TextBox x:Name="WiekPrzedsiebiorswa" Text="{Binding WiekPrzedsiebiorswa, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
         <Label Content="Od ilu lat istnieje przedsiębiorstwo" HorizontalAlignment="Left" Margin="183,268,0,0" VerticalAlignment="Top" />
 		<Label Content="Strona 1/14" HorizontalAlignment="Left" Margin="328,10,0,0" VerticalAlignment="Top"/>
+		<Label x:Name="validator"  Foreground="Red" Content="" HorizontalAlignment="Left" Margin="617,58,0,0" VerticalAlignment="Top"/>
 
 
 

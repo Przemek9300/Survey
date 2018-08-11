@@ -23,6 +23,9 @@ namespace Audyt_innowacyjności.ViewModel
         }
         protected ValidationHelper Validator { get; private set; }
         private string nazwaPrzedsiebiorstwa;
+        private string branza;
+
+
 
         public string NazwaPrzedsiebiorstwa
         {
@@ -50,8 +53,27 @@ namespace Audyt_innowacyjności.ViewModel
                 RaisePropertyChanged(nameof(ValidationErrorsString));
             }
         }
+        public string Branza
+        {
+            get { return branza; }
+            set
+            {
+                branza = value;
+
+                RaisePropertyChanged(nameof(Branza));
+                Validator.ValidateAsync(nameof(Branza));
+
+                {
+
+
+                }
+
+            }
+        }
+
         public int Id { get; set; }
-        public string Branza { get; set; }
+        
+
         public int NumerRegon { get; set; }
         public int NumerKRS { get; set; }
         public string Miasto { get; set; }
@@ -203,10 +225,12 @@ namespace Audyt_innowacyjności.ViewModel
 
         private void ConfigureValidationRules()
         {
-            Validator.AddRequiredRule(() => NazwaPrzedsiebiorstwa, "User Name is required");
+            Validator.AddRequiredRule(() => NazwaPrzedsiebiorstwa, "Nazwa Przedesiebiorstwa jest wymagana");
+            Validator.AddRequiredRule(() => Branza, "Nazwa Branży jest wymagana");
+
 
         }
-      
+
 
         private async void Validate()
         {

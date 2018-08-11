@@ -30,8 +30,12 @@ namespace Audyt_innowacyjności
 
         private void Next(object sender, RoutedEventArgs e)
         {
-            
+
+            bool valid = model.IsValid ?? false;
+            if (valid)
                 this.NavigationService.ONavigate(new Page3(), model);
+            else
+                validator.Content = model.ValidationErrorsString;
         }
 
         private void Back(object sender, RoutedEventArgs e)

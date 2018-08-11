@@ -159,6 +159,7 @@
     </Compile>
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\ModelBase.cs" />
+    <Compile Include="ViewModel\QuestionViewModel.cs" />
     <Compile Include="ViewModel\SurveyViewModel.cs" />
     <Page Include="Charts.xaml">
       <SubType>Designer</SubType>
