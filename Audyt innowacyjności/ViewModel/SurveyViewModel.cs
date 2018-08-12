@@ -246,12 +246,6 @@ namespace Audyt_innowacyjności.ViewModel
 
         ///2//////////////////////////////////////////////////////////////////////
 
-        private int iloscPracownikow;
-        private string poziomWyksztalcenia;
-
-        private int stazPracy;
-
-        private int wiekZatrudnienia;
 
         public int IloscPracownikow
         {
