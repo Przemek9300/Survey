@@ -19,16 +19,17 @@
                                Minimum="1" 
                                Maximum="5" 
                                Ticks="5" 
-                               ShowLegend="True" 
+                               ShowLegend="False" 
                                LegendLocation="BottomRight"
-                               LegendBackgroundColor="Red" Height="600" Width="600" VerticalAlignment="Bottom" Grid.RowSpan="2" />
-		<Button x:Name="AddLine" 
+                               LegendBackgroundColor="Red" Height="800" Width="800" VerticalAlignment="Bottom" Grid.RowSpan="2" />
+		<Button 
                 HorizontalAlignment="Right"
                 Margin="5"
                 Padding="5"
                 Grid.Row="1"
-                Content="Add line" 
-                Click="AddLineClick" RenderTransformOrigin="0.496,2.4" />
+                Content="Raport" 
+                Click="Check" RenderTransformOrigin="0.496,2.4" />
+
 
 	</Grid>
 </Page>
