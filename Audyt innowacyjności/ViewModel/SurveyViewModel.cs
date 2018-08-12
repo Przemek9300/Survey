@@ -853,7 +853,7 @@ namespace Audyt_innowacyjności.ViewModel
             Validator.AddRequiredRule(() => BarieryWewnetrzne, "Bariery wewnętrzne są wymagane");
             Validator.AddRequiredRule(() => BarieryZewnetrzne, "Bariery zewnetrzne są wymagane");
 
-            Validator.AddRequiredRule(() => RynekUsług, "Bariery wewnętrzne są wymagane");
+            Validator.AddRequiredRule(() => RynekUsług, "Rynek usług jest wymagany");
             Validator.AddRequiredRule(() => StrategiaRozwoju, "Strategia rozwoju jest wymagana");
             Validator.AddRequiredRule(() => CenyWStosunkuDoKonkurencji, "Ceny w stosunku do konkurencji są wymagane");
             Validator.AddRequiredRule(() => PrzewagaKonkurencyjna, "Przewaga konkurencji jest wymagana");
