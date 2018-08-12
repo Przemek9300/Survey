@@ -858,7 +858,7 @@ namespace Audyt_innowacyjności.ViewModel
             Validator.AddRequiredRule(() => MocneStrony, "Mocne strony są wymagane");
             Validator.AddRequiredRule(() => SlabeStrony, "Słabe strony są wymagane");
             Validator.AddRequiredRule(() => Szanse, "Szanse są wymagane");
-            Validator.AddRequiredRule(() => Zagrozenia, "Zagrożenia są wymagane");
+            Validator.AddRequiredRule(() => Zag, "Zagrożenia są wymagane");
 
 
 
