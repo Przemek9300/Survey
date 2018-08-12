@@ -9,9 +9,31 @@
       Title="Page14">
 
     <Grid>
-        <Button Content="Dalej" HorizontalAlignment="Left" Margin="653,408,0,0" VerticalAlignment="Top" Width="75" Click="Next"/>
-        <Button Content="Confij" HorizontalAlignment="Left" Margin="573,408,0,0" VerticalAlignment="Top" Width="75" Click="Back"/>
+        <Button Content="Dalej" HorizontalAlignment="Left" Margin="640,408,0,0" VerticalAlignment="Top" Width="72" Click="Next"/>
+        <Button Content="Confij" HorizontalAlignment="Left" Margin="564,408,0,0" VerticalAlignment="Top" Width="71" Click="Back"/>
         <Label Content="Strona 13/14" HorizontalAlignment="Left" Margin="328,10,0,0" VerticalAlignment="Top"/>
+
+        <TextBox x:Name="WyrobFirmy2" Text="{Binding WyrobFirmy2, Mode=TwoWay, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="WyrobFirmy4"  Text="{Binding WyrobFirmy4, Mode=TwoWay, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="WyrobFirmy6" Text="{Binding WyrobFirmy6, Mode=TwoWay, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="WyrobFirmy8" Text="{Binding WyrobFirmy8, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="WyrobFirmy10" Text="{Binding WyrobFirmy10, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+
+        <Label Content="Oferta firmy i cechy rynku" HorizontalAlignment="Left" Margin="298,41,0,0" VerticalAlignment="Top" Width="146" />
+        <Label Content="Jakie wyroby oferuje firma?" HorizontalAlignment="Left" Margin="298,97,0,0" VerticalAlignment="Top" Width="160" />
+        <TextBox x:Name="WyrobFirmy1" Text="{Binding WyrobFirmy1, Mode=TwoWay, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="240,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="WyrobFirmy3"  Text="{Binding WyrobFirmy3, Mode=TwoWay, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="240,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="WyrobFirmy5" Text="{Binding WyrobFirmy5, Mode=TwoWay, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="240,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="WyrobFirmy7" Text="{Binding WyrobFirmy7, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="240,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="WyrobFirmy9" Text="{Binding WyrobFirmy9, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="240,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+
+        <Label Content="Jaki jest rynek usług?" HorizontalAlignment="Left" Margin="240,268,0,0" VerticalAlignment="Top" Width="127" />
+        <TextBox x:Name="RynekUsług" Text="{Binding RynekUsług, Mode=TwoWay, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,271,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <Label Content="Perspektywa rozwoju rynku w najbliższych latach" HorizontalAlignment="Left" Margin="94,299,0,0" VerticalAlignment="Top" Width="273" />
+        <RadioButton GroupName="PerpektywaRozwoju " Content="WSCHODZĄCY" IsChecked="True" Margin="382,302,313,128.6" Checked="PerpektywaRozwojuWSCHODZACY"/>
+        <RadioButton GroupName="PerpektywaRozwoju " Content="SCHYŁKOWY" Margin="493,302,200,128.6" Checked="PerpektywaRozwojuSCHYLKOWY"/>
+        <RadioButton GroupName="PerpektywaRozwoju " Content="STABILNY" Margin="605,302,123,124.6" Checked="PerpektywaRozwojuSTABILNY"/>
+        <RadioButton GroupName="PerpektywaRozwoju " Content="NIESTABILNY" Margin="682,302,22,124.6" Checked="PerpektywaRozwojuNIESTABILNY"/>
 
     </Grid>
 </Page>

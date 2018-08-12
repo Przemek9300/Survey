@@ -46,5 +46,28 @@ namespace Audyt_innowacyjności
         {
             this.NavigationService.ONavigate(new Page13(), model);
         }
+
+        private void PerpektywaRozwojuWSCHODZACY(object sender, RoutedEventArgs e)
+        {
+            model.PerpektywaRozwoju = PerpektywaRozwoju.wschodzący;
+        }
+
+        private void PerpektywaRozwojuSCHYLKOWY(object sender, RoutedEventArgs e)
+        {
+            model.PerpektywaRozwoju = PerpektywaRozwoju.schyłkowy;
+
+        }
+
+        private void PerpektywaRozwojuSTABILNY(object sender, RoutedEventArgs e)
+        {
+            model.PerpektywaRozwoju = PerpektywaRozwoju.stabilny;
+
+        }
+
+        private void PerpektywaRozwojuNIESTABILNY(object sender, RoutedEventArgs e)
+        {
+            model.PerpektywaRozwoju = PerpektywaRozwoju.niestabilny;
+
+        }
     }
 }

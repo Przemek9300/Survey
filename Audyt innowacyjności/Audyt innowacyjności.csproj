@@ -166,7 +166,6 @@
     <Compile Include="Result.xaml.cs">
       <DependentUpon>Result.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\ModelBase.cs" />
     <Compile Include="ViewModel\QuestionViewModel.cs" />
     <Compile Include="ViewModel\SurveyViewModel.cs" />

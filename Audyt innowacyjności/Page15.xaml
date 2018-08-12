@@ -8,11 +8,33 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Page15">
 
-	<Grid>
-		<Button Content="Zakończ" HorizontalAlignment="Left" Margin="653,408,0,0" VerticalAlignment="Top" Width="75" Click="Next"/>
-		<Button Content="Confij" HorizontalAlignment="Left" Margin="573,408,0,0" VerticalAlignment="Top" Width="75" Click="Back"/>
-		<Label Content="Strona 14/14" HorizontalAlignment="Left" Margin="328,10,0,0" VerticalAlignment="Top"/>
-		<TextBlock  Text="{Binding ValidationErrorsString}" Foreground="Red" HorizontalAlignment="Center"  TextWrapping="Wrap" VerticalAlignment="Center" Height="147" Width="264"/>
+    <Grid>
+        <Button Content="Zakończ" HorizontalAlignment="Left" Margin="653,408,0,0" VerticalAlignment="Top" Width="75" Click="Next"/>
+        <Button Content="Confij" HorizontalAlignment="Left" Margin="573,408,0,0" VerticalAlignment="Top" Width="75" Click="Back"/>
+        <Label Content="Strona 14/14" HorizontalAlignment="Left" Margin="328,10,0,0" VerticalAlignment="Top"/>
+        <TextBlock  Text="{Binding ValidationErrorsString}" Foreground="Red" HorizontalAlignment="Center"  TextWrapping="Wrap" VerticalAlignment="Center" Height="147" Width="264" Margin="242,151,294,151.6"/>
+        <TextBox x:Name="StrategiaRozwoju" Text="{Binding StrategiaRozwoju, Mode=TwoWay, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="386,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="CenyWStosunkuDoKonkurencji"  Text="{Binding CenyWStosunkuDoKonkurencji, Mode=TwoWay, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="386,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="PrzewagaKonkurencyjna" Text="{Binding PrzewagaKonkurencyjna, Mode=TwoWay, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="386,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="KonkurentISubstytuty" Text="{Binding NumerKRS, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="386,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <Label Content="Jaka jest strategia rozwoju produktów?" HorizontalAlignment="Left" Margin="160,84,0,0" VerticalAlignment="Top" Width="221" />
+        <Label Content="Jak kształtują się ceny w porównaniu do konkurencji?" HorizontalAlignment="Left" Margin="86,112,0,0" VerticalAlignment="Top" Width="295"/>
+        <Label Content="Co decyduje o waszej przewadze konkurencyjnej?" HorizontalAlignment="Left" Margin="108,138,0,0" VerticalAlignment="Top" Width="273"/>
+        <Label Content="Kto jest konkurentem (jakie produkty) a kto oferuje substytuty (jakie potrzeby zaspokajają)?" HorizontalAlignment="Left" Margin="-110,168,0,0" VerticalAlignment="Top" Width="496"/>
+        <TextBox x:Name="RozniceProduktow" Text="{Binding RozniceProduktow, Mode=TwoWay, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="386,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <Label Content="Czym różnią się produkty lub usługi od oferowanych przez konkurencję?" HorizontalAlignment="Left" Margin="-14,194,0,0" VerticalAlignment="Top" Width="395" />
+        <Label Content="Jakie działania w Pana(i) firmie przyniosłyby najwięcej korzyści dla firmy?" HorizontalAlignment="Left" Margin="108,224,0,0" VerticalAlignment="Top" Width="395" />
+        <Label Content="Rozbudowa oferty" HorizontalAlignment="Left" Margin="246,256,0,0" VerticalAlignment="Top"/>
+        <Label Content="Lepsza promocja" Margin="261,287,439,0" VerticalAlignment="Top" />
+        <Label Content="Modernizacja zaplecza technologicznego" HorizontalAlignment="Left" Margin="134,316,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nowe oprogramowanie" Margin="218,348,448,0" VerticalAlignment="Top" />
+        <Label Content="Inne" Margin="322,377,444,0" VerticalAlignment="Top" RenderTransformOrigin="5.755,-3.204" />
+        <CheckBox Content="" HorizontalAlignment="Left" Margin="361,262,0,0" VerticalAlignment="Top" Width="100" Checked="RozbudowaOferty" IsChecked="False" Height="20"/>
+        <CheckBox Content="" HorizontalAlignment="Left" Margin="361,293,0,0" VerticalAlignment="Top" Width="100" Checked="LepszaPromocja" IsChecked="False"/>
+        <CheckBox Content="" HorizontalAlignment="Left" Margin="361,324,0,0" VerticalAlignment="Top" Width="100" Checked="ModernizacjaZaplecza" IsChecked="False"/>
+        <CheckBox Content="" HorizontalAlignment="Left" Margin="361,354,0,0" VerticalAlignment="Top" Width="100" Checked="NoweOprogramowanie" IsChecked="False"/>
+        <CheckBox Content="" HorizontalAlignment="Left" Margin="361,379,0,0" VerticalAlignment="Top" Width="20" Checked="InneDzialania" IsChecked="False" Height="22"/>
+        <TextBox x:Name="InneDzialaniaKomentarz" Text="{Binding InneDzialaniaKomentarz, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="386,379,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
 
-	</Grid>
+    </Grid>
 </Page>
