@@ -390,6 +390,28 @@ namespace Audyt_innowacyjności.ViewModel
             Validator.AddRequiredRule(() => WiekPrzedsiebiorstwa, "Nazwa przedesiebiorstwa jest wymagana");
             Validator.AddRule(() => RuleResult.Assert(WiekPrzedsiebiorstwa >= 0, "Wiek przedsiebiostwa musi być nieujemny"));
 
+            Validator.AddRequiredRule(() => ZasiegDzialanosci, "Zasięg działalności jest wymagane");
+            //Validator.AddRequiredRule(() => KoordynacjaPracyKomentarz, "Komentarz jest wymagany");
+            //Validator.AddRequiredRule(() => ProcesoweKomentarz, "Procesowy komenatrz jest wymagany");
+            //Validator.AddRequiredRule(() => ProduktoweKomentarz, "Komenatrz do produktu jest wymagany");
+            //Validator.AddRequiredRule(() => OrgnizacyjneKomentarz, "Komenatrz do Organizacji jest wymagany");
+            //Validator.AddRequiredRule(() => MarketingoweKomentarz, "Komenatrz do Marketingu jest wymagany");
+
+            Validator.AddRequiredRule(() => BarieryWewnetrzne, "Bariery wewnętrzne są wymagane");
+            Validator.AddRequiredRule(() => BarieryZewnetrzne, "Bariery zewnetrzne są wymagane");
+
+
+
+            Validator.AddRequiredRule(() => MocneStrony, "Mocne strony są wymagane");
+            Validator.AddRequiredRule(() => SlabeStrony, "Słabe strony są wymagane");
+            Validator.AddRequiredRule(() => MocneStrony, "Szanse są wymagane");
+            Validator.AddRequiredRule(() => MocneStrony, "Zagrożenia są wymagane");
+
+
+
+
+
+
 
 
 

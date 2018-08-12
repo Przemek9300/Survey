@@ -21,7 +21,7 @@ namespace Audyt_innowacyjności
     public partial class Charts : Page
     {
         public List<double> Pts { get; set; }
-
+        
         private readonly Random random = new Random(1234);
 
             public Charts()
@@ -33,9 +33,9 @@ namespace Audyt_innowacyjności
             private void OnLoaded(object sender, RoutedEventArgs routedEventArgs)
             {
                 DataContext = this;
+                
          
                  
-
         Axes = new[] { "Ilość Innowacji", "Liczba nowych pomysłów", "Zyski wdrożenia nowych wyrobów", "Zyski dzięki innowacjom", "Długość trwania cykli prac wdrożeniowych i rozwojowych", "Wysokość wydatków przeznaczonych na innowacyjność", "Średnia ilość pomysłów na jednego pracownika", "Skłonność do podejmowania ryzyka" };
 
                 Lines = new ObservableCollection<ChartLine> {
