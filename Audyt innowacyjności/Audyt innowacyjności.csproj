@@ -105,6 +105,7 @@
     <Compile Include="Charts.xaml.cs">
       <DependentUpon>Charts.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Extensions\IntExtensions.cs" />
     <Compile Include="Mapper\AutoMapper.cs" />
     <Compile Include="Migrations\201807312151208_All properties.cs" />
     <Compile Include="Migrations\201807312151208_All properties.Designer.cs">

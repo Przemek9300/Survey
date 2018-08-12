@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Audyt_innowacyjności.Extensions;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -35,26 +36,37 @@ namespace Audyt_innowacyjności
             {
                 DataContext = this;
 
-                Axes = new[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6", "Item 7" };
+                Axes = new[] { "Ilość Innowacji", "Liczba nowych pomysłów", "Zyski wdrożenia nowych wyrobów", "Zyski dzięki innowacjom", "Długość trwania cykli prac wdrożeniowych i rozwojowych", "Item 6", "Item 6", "Item 6" };
 
                 Lines = new ObservableCollection<ChartLine> {
                                                             new ChartLine {
                                                                               LineColor = Colors.Red,
                                                                               FillColor = Color.FromArgb(128, 255, 0, 0),
                                                                               LineThickness = 2,
-                                                                              PointDataSource = GenerateRandomDataSet(Axes.Length),
+                                                                              PointDataSource = GetDataSet(),
                                                                               Name = "Chart 1"
-                                                                          },
-                                                            new ChartLine {
-                                                                              LineColor = Colors.Blue,
-                                                                              FillColor = Color.FromArgb(128, 0, 0, 255),
-                                                                              LineThickness = 2,
-                                                                              PointDataSource = GenerateRandomDataSet(Axes.Length),
-                                                                              Name = "Chart 2"
                                                                           }
+                                                 
                                                         };
             }
 
+        public List<double> GetDataSet()
+        {
+            var data = this.NavigationService.GetData();
+            var pts = new List<double>() {
+            data.WprowadzoneInnowacje.Map(0, 30, 1, 5),
+               data.NowePomysły.Map(0, 46, 1, 5),
+               data.ZyskiNoweWyroby.Map(0, 24001, 1, 5),
+               data.ZyskiInnowacjeInne.Map(0, 18001, 1, 5),
+               data.DlugoscCykli.Map(0, 360, 1, 5),
+               data.WydatkiInnowacyjnosc.Map(0, 20000, 1, 5),
+               data.SredniaIloscPomyslow.Map(0, 2, 1, 5),
+               data.SklonnoscDoRyzyka.Map(1, 5, 1, 5)
+            };
+
+
+            return pts;
+        }
             public List<double> GenerateRandomDataSet(int nmbrOfPoints)
             {
                 var pts = new List<double>(nmbrOfPoints);
@@ -75,7 +87,7 @@ namespace Audyt_innowacyjności
                     LineColor = Colors.Yellow,
                     FillColor = Color.FromArgb(128, 255, 255, 0),
                     LineThickness = 2,
-                    PointDataSource = GenerateRandomDataSet(Axes.Length),
+                    PointDataSource = GetDataSet(),
                     Name = "Chart " + (Lines.Count + 1)
                 };
                 Lines.Add(line);
