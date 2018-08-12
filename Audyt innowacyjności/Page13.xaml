@@ -30,10 +30,10 @@
         <Label Content="Czy przedsiębiorstwo przeprowadza badania dotyczące pomiaru jakości świadczonych usług?&#xD;&#xA;Jeżeli tak to jakie narzędzia w tym celu stosuje przedsiębiorstwo?&#xD;&#xA;" HorizontalAlignment="Left" Margin="-56,308,0,0" VerticalAlignment="Top" Width="505" Height="47" />
         <RadioButton GroupName="PomiarStopniaSwiadczonychUslug" Content="TAK" IsChecked="True" Margin="456,311,292,120.6" Checked="PomiarStopniaSwiadczonychUslugTAK"/>
         <RadioButton GroupName="PomiarStopniaSwiadczonychUslug" Content="NIE" Margin="513,311,224,120.6" Checked="PomiarStopniaSwiadczonychUslugNIE"/>
-        <TextBox x:Name="PomiarStopniaSwiadczonychUslugKomentarz" Text="{Binding PomiarStopniaSwiadczonychUslug, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="456,335,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="PomiarStopniaSwiadczonychUslugKomentarz" Text="{Binding PomiarStopniaSwiadczonychUslugKomentarz, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="456,335,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
 
         <Label Content="Czy przedsiębiorstwo prowadzi lub planuje prowadzić prace badawczo- rozwojowe?&#xD;&#xA; Jeżeli tak to proszę napisać w jakim zakresie" HorizontalAlignment="Left" Margin="0,111,0,0" VerticalAlignment="Top" Width="449" Height="42"/>
-        <TextBox x:Name="PraceBadawczeKomentarz" Text="{Binding KoordynacjaPracyKomentarz, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="454,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+        <TextBox x:Name="PraceBadawczeKomentarz" Text="{Binding PraceBadawczeKomentarz, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="454,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
         <RadioButton GroupName="PraceBadawcze" Content="TAK" IsChecked="True" Margin="454,116,290,316.6" Checked="PraceBadawczeTAK"/>
         <RadioButton GroupName="PraceBadawcze" Content="NIE" Margin="513,116,226,316.6" Checked="PraceBadawczeNIE"/>
         <RadioButton GroupName="PraceBadawcze" Content="PLANUJE" Margin="573,116,152,313.6" Checked="PraceBadawczePLANUJE"/>

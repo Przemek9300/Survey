@@ -13,14 +13,14 @@
         <Button Content="Confij" HorizontalAlignment="Left" Margin="573,408,0,0" VerticalAlignment="Top" Width="75" Click="Back"/>
         <Label Content="Strona 10/14" HorizontalAlignment="Left" Margin="328,10,0,0" VerticalAlignment="Top"/>
 
-        <Label Content="Czy w Pana(i) firmie prowadzone są działania w zakresie pomiaru stopnia innowacyjności organizacji?" HorizontalAlignment="Left" Margin="51,158,0,0" VerticalAlignment="Top" Width="365" Height="27"/>
-        <TextBox x:Name="PomiarStopniaInnowacyjnosciKomentarz" Text="{Binding KoordynacjaPracyKomentarz, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="50,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="486" RenderTransformOrigin="-1.562,-1.653"/>
-        <RadioButton GroupName="PomiarStopniaInnowacyjnosci" Content="TAK" IsChecked="True" Margin="416,163,293,286.6" Checked="PomiarStopniaInnowacyjnosciTAK"/>
-        <RadioButton GroupName="PomiarStopniaInnowacyjnosci" Content="NIE" Margin="475,163,239,286.6" Checked="PomiarStopniaInnowacyjnosciNIE"/>
-		<TextBlock  Text="{Binding ValidationErrorsString}" Foreground="Red" HorizontalAlignment="Right"  TextWrapping="Wrap" VerticalAlignment="Top" Height="147" Width="264" Margin="588,4,-52,299"/>
+        <Label Content="Czy w Pana(i) firmie prowadzone są działania w zakresie pomiaru stopnia innowacyjności organizacji?" HorizontalAlignment="Left" Margin="28,160,0,0" VerticalAlignment="Top" Width="542" Height="27"/>
+        <TextBox x:Name="PomiarStopniaInnowacyjnosciKomentarz" Text="{Binding PomiarStopniaInnowacyjnosciKomentarz, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="84,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="486" RenderTransformOrigin="-1.562,-1.653"/>
+        <RadioButton GroupName="PomiarStopniaInnowacyjnosci" Content="TAK" IsChecked="True" Margin="584,163,125,269.6" Checked="PomiarStopniaInnowacyjnosciTAK"/>
+        <RadioButton GroupName="PomiarStopniaInnowacyjnosci" Content="NIE" Margin="678,163,36,269.6" Checked="PomiarStopniaInnowacyjnosciNIE"/>
+        <TextBlock  Text="{Binding ValidationErrorsString}" Foreground="Red" HorizontalAlignment="Right"  TextWrapping="Wrap" VerticalAlignment="Top" Height="147" Width="264" Margin="588,4,-52,299"/>
 
 
 
 
-	</Grid>
+    </Grid>
 </Page>

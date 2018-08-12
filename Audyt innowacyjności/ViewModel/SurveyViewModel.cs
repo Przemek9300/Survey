@@ -246,10 +246,6 @@ namespace Audyt_innowacyjności.ViewModel
 
         ///2//////////////////////////////////////////////////////////////////////
 
-<<<<<<< HEAD
-     
-=======
->>>>>>> dd3653ca34b674641ee4a1d0d6a3cf96737da46c
 
         public int IloscPracownikow
         {
@@ -839,7 +835,7 @@ namespace Audyt_innowacyjności.ViewModel
             Validator.AddRequiredRule(() => WiekPrzedsiebiorstwa, "Wiek przedsiebiostwa jest wymagany");
             Validator.AddRule(() => RuleResult.Assert(WiekPrzedsiebiorstwa>=0, "Wiek przedsiebiostwa musi być nieujemny"));
 
-            Validator.AddRequiredRule(() => IloscPracownikow, "Nazwa przedesiebiorstwa jest wymagana");
+            Validator.AddRequiredRule(() => IloscPracownikow, "Ilość pracowników jest wymagana");
             Validator.AddRule(() => RuleResult.Assert(IloscPracownikow >= 0, "Wiek przedsiebiostwa musi być nieujemny"));
             Validator.AddRequiredRule(() => PoziomWyksztalcenia, "Nazwa przedesiebiorstwa jest wymagana");
             Validator.AddRequiredRule(() => StazPracy, "Nazwa przedesiebiorstwa jest wymagana");
@@ -847,7 +843,7 @@ namespace Audyt_innowacyjności.ViewModel
             Validator.AddRequiredRule(() => WiekPrzedsiebiorstwa, "Nazwa przedesiebiorstwa jest wymagana");
             Validator.AddRule(() => RuleResult.Assert(WiekPrzedsiebiorstwa >= 0, "Wiek przedsiebiostwa musi być nieujemny"));
 
-            Validator.AddRequiredRule(() => ZasiegDzialanosci, "Zasięg działalności jest wymagane");
+            Validator.AddRequiredRule(() => ZasiegDzialalnosci, "Zasięg działalności jest wymagane");
             //Validator.AddRequiredRule(() => KoordynacjaPracyKomentarz, "Komentarz jest wymagany");
             //Validator.AddRequiredRule(() => ProcesoweKomentarz, "Procesowy komenatrz jest wymagany");
             //Validator.AddRequiredRule(() => ProduktoweKomentarz, "Komenatrz do produktu jest wymagany");
@@ -861,8 +857,8 @@ namespace Audyt_innowacyjności.ViewModel
 
             Validator.AddRequiredRule(() => MocneStrony, "Mocne strony są wymagane");
             Validator.AddRequiredRule(() => SlabeStrony, "Słabe strony są wymagane");
-            Validator.AddRequiredRule(() => MocneStrony, "Szanse są wymagane");
-            Validator.AddRequiredRule(() => MocneStrony, "Zagrożenia są wymagane");
+            Validator.AddRequiredRule(() => Szanse, "Szanse są wymagane");
+            Validator.AddRequiredRule(() => Zagrozenia, "Zagrożenia są wymagane");
 
 
 

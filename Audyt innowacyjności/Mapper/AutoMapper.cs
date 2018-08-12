@@ -29,7 +29,7 @@ namespace Audyt_innowacyjności.Mapper
                 AktywaNiematerialne = model.AktywaNiematerialne,
                 AktywaMaterialne = model.AktywaMaterialne,
                 AktywaPrawne = model.AktywaPrawne,
-                ZasiegDzialanosci = model.ZasiegDzialanosci,
+                ZasiegDzialanosci = model.ZasiegDzialalnosci,
                 SzczebleHierarchiPionowej = model.SzczebleHierarchiPionowej,
                 KoordynacjaPracy = model.KoordynacjaPracy,
                 KoordynacjaPracyKomentarz = model.KoordynacjaPracyKomentarz,
