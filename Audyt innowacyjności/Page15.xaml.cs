@@ -41,13 +41,18 @@ namespace Audyt_innowacyjności
 
         private void Next(object sender, RoutedEventArgs e)
         {
-            using (var context = new SurveyContext())
+            bool valid = model.IsValid ?? false;
+            if (valid)
             {
-                context.Surveys.Add(Mapper.AutoMapper.Map(model));
-                context.SaveChanges();
-            }
+                using (var context = new SurveyContext())
+                {
+                    context.Surveys.Add(Mapper.AutoMapper.Map(model));
+                    context.SaveChanges();
+                }
 
-            this.NavigationService.ONavigate(new Page1(), model);
+                this.NavigationService.ONavigate(new Page1(), model);
+            }
+            
         }
         private void Back(object sender, RoutedEventArgs e)
         {

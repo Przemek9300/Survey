@@ -15,7 +15,7 @@ namespace Audyt_innowacyjności
         public string NazwaPrzedsiebiorstwa { get; set; }
         public string Branza { get; set; }
         public int NumerRegon { get; set; }
-        public int NumerKRS { get; set; }
+        public string NumerKRS { get; set; }
         public string Miasto { get; set; }
         public int WiekPrzedsiebiorstwa { get; set; }
 

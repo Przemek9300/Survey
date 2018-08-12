@@ -21,6 +21,12 @@ namespace Audyt_innowacyjności.ViewModel
 
         private string nazwaPrzedsiebiorstwa;
         private string branza;
+        private int numerRegon;
+        private string numerKRS;
+        private string miasto;
+        private int wiekPrzedsiebiorstwa;
+
+
 
 
 
@@ -85,17 +91,148 @@ namespace Audyt_innowacyjności.ViewModel
         public int Id { get; set; }
         
 
-        public int NumerRegon { get; set; }
-        public int NumerKRS { get; set; }
-        public string Miasto { get; set; }
-        public int WiekPrzedsiebiorstwa { get; set; }
+        public int NumerRegon
+        {
+            get { return numerRegon; }
+            set
+            {
+                numerRegon = value;
+
+                RaisePropertyChanged(nameof(NumerRegon));
+                Validator.ValidateAsync(nameof(NumerRegon));
+
+                {
+
+
+                }
+
+            }
+        }
+        public string NumerKRS
+        {
+            get { return numerKRS; }
+            set
+            {
+                numerKRS = value;
+
+                RaisePropertyChanged(nameof(NumerKRS));
+                Validator.ValidateAsync(nameof(NumerKRS));
+
+                {
+
+
+                }
+
+            }
+        }
+        public string Miasto
+        {
+            get { return miasto; }
+            set
+            {
+                miasto = value;
+
+                RaisePropertyChanged(nameof(Miasto));
+                Validator.ValidateAsync(nameof(Miasto));
+
+                {
+
+
+                }
+
+            }
+        }
+        public int WiekPrzedsiebiorstwa
+        {
+            get { return wiekPrzedsiebiorstwa; }
+            set
+            {
+                wiekPrzedsiebiorstwa = value;
+
+                RaisePropertyChanged(nameof(WiekPrzedsiebiorstwa));
+                Validator.ValidateAsync(nameof(WiekPrzedsiebiorstwa));
+
+                {
+
+
+                }
+
+            }
+        }
 
         ///2//////////////////////////////////////////////////////////////////////
 
-        public int IloscPracownikow { get; set; }
-        public string PoziomWyksztalcenia { get; set; }
-        public int StazPracy { get; set; }
-        public int WiekZatrudnienia { get; set; }
+        private int iloscPracownikow;
+        private string poziomWyksztalcenia;
+
+        private int stazPracy;
+
+        private int wiekZatrudnienia;
+
+        public int IloscPracownikow
+        {
+            get { return iloscPracownikow; }
+            set
+            {
+                iloscPracownikow = value;
+
+                RaisePropertyChanged(nameof(IloscPracownikow));
+                Validator.ValidateAsync(nameof(IloscPracownikow));
+
+                {
+
+                }
+
+            }
+        }
+        public string PoziomWyksztalcenia
+        {
+            get { return poziomWyksztalcenia; }
+            set
+            {
+                poziomWyksztalcenia = value;
+
+                RaisePropertyChanged(nameof(PoziomWyksztalcenia));
+                Validator.ValidateAsync(nameof(PoziomWyksztalcenia));
+
+                {
+
+                }
+
+            }
+        }
+        public int StazPracy
+        {
+            get { return stazPracy; }
+            set
+            {
+                stazPracy = value;
+
+                RaisePropertyChanged(nameof(StazPracy));
+                Validator.ValidateAsync(nameof(StazPracy));
+
+                {
+
+                }
+
+            }
+        }
+        public int WiekZatrudnienia
+        {
+            get { return wiekZatrudnienia; }
+            set
+            {
+                wiekZatrudnienia = value;
+
+                RaisePropertyChanged(nameof(WiekZatrudnienia));
+                Validator.ValidateAsync(nameof(WiekZatrudnienia));
+
+                {
+
+                }
+
+            }
+        }
 
         ////3/////////////////////////////////////////////////////////////////////
 
@@ -238,6 +375,31 @@ namespace Audyt_innowacyjności.ViewModel
         {
             Validator.AddRequiredRule(() => NazwaPrzedsiebiorstwa, "Nazwa przedesiebiorstwa jest wymagana");
             Validator.AddRequiredRule(() => Branza, "Nazwa branży jest wymagana");
+            Validator.AddRequiredRule(() => NumerRegon, "Numer Regon jest wymagana");
+            Validator.AddRule(() => RuleResult.Assert(NumerRegon.ToString().Length == 9, "Niepoprawny numer Regon"));
+            Validator.AddRequiredRule(() => NumerKRS, "Numer KRS jest wymagana");
+            Validator.AddRequiredRule(() => Miasto, "Miasto jest wymagana");
+            Validator.AddRequiredRule(() => WiekPrzedsiebiorstwa, "Wiek przedsiebiostwa jest wymagany");
+            Validator.AddRule(() => RuleResult.Assert(WiekPrzedsiebiorstwa>=0, "Wiek przedsiebiostwa musi być nieujemny"));
+
+            Validator.AddRequiredRule(() => IloscPracownikow, "Nazwa przedesiebiorstwa jest wymagana");
+            Validator.AddRule(() => RuleResult.Assert(IloscPracownikow >= 0, "Wiek przedsiebiostwa musi być nieujemny"));
+            Validator.AddRequiredRule(() => PoziomWyksztalcenia, "Nazwa przedesiebiorstwa jest wymagana");
+            Validator.AddRequiredRule(() => StazPracy, "Nazwa przedesiebiorstwa jest wymagana");
+            Validator.AddRule(() => RuleResult.Assert(StazPracy >= 0, "Wiek przedsiebiostwa musi być nieujemny"));
+            Validator.AddRequiredRule(() => WiekPrzedsiebiorstwa, "Nazwa przedesiebiorstwa jest wymagana");
+            Validator.AddRule(() => RuleResult.Assert(WiekPrzedsiebiorstwa >= 0, "Wiek przedsiebiostwa musi być nieujemny"));
+
+
+
+
+
+
+
+
+
+
+
 
 
         }
