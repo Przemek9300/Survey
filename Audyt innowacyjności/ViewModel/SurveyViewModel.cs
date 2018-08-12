@@ -318,7 +318,7 @@ namespace Audyt_innowacyjności.ViewModel
 
         //////////////11///////////////////////////////////////////////////////////
 
-        //public Enum PraceBadawcze { get; set; }
+        public PraceBadawcze PraceBadawcze { get; set; }
         public string PraceBadawczeKomentarz { get; set; }
         public bool KoloLubOrganizacja { get; set; }
         public string KoloLubOrganizacjaKomentarz { get; set; }
@@ -342,7 +342,7 @@ namespace Audyt_innowacyjności.ViewModel
         public string WyrobFirmy10 { get; set; }
 
         public string RynekUsług { get; set; }
-        //public Enum PerpektywaRozwoju { get; set; } Do wyboru: Wschodzący, schyłkowy, stabilny, niestabilny
+        public PerpektywaRozwoju PerpektywaRozwoju { get; set; }
         public string StrategiaRozwoju { get; set; }
         public string CenyWStosunkuDoKonkurencji { get; set; }
         public string PrzewagaKonkurencyjna { get; set; }

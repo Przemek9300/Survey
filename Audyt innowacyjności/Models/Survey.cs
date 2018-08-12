@@ -9,6 +9,7 @@ namespace Audyt_innowacyjności
 {
     public class Survey
     {
+
         
         public int Id { get; set; }
         public string NazwaPrzedsiebiorstwa { get; set; }
@@ -109,7 +110,7 @@ namespace Audyt_innowacyjności
 
         //////////////11///////////////////////////////////////////////////////////
 
-        //public Enum PraceBadawcze { get; set; }
+        public PraceBadawcze PraceBadawcze { get; set; }
         public string PraceBadawczeKomentarz { get; set; }
         public bool KoloLubOrganizacja { get; set; }
         public string KoloLubOrganizacjaKomentarz { get; set; }
@@ -133,7 +134,7 @@ namespace Audyt_innowacyjności
         public string WyrobFirmy10 { get; set; }
 
         public string RynekUsług { get; set; }
-        //public Enum PerpektywaRozwoju { get; set; } Do wyboru: Wschodzący, schyłkowy, stabilny, niestabilny
+        public PerpektywaRozwoju PerpektywaRozwoju { get; set; }
         public string StrategiaRozwoju { get; set; }
         public string CenyWStosunkuDoKonkurencji { get; set; }
         public string PrzewagaKonkurencyjna { get; set; }
@@ -152,3 +153,13 @@ namespace Audyt_innowacyjności
 
     }
 }
+public enum PraceBadawcze {
+    TAK = 1,
+    NIE = 0,
+    PLANUJE = 2 };
+
+public enum PerpektywaRozwoju {
+    wschodzący = 0,
+    schyłkowy = 1,
+    stabilny = 2,
+    niestabilny = 3 };

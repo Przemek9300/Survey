@@ -21,11 +21,11 @@
         <TextBox x:Name="Szanse" Text="{Binding Szanse, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="444,272,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
         <TextBox x:Name="Zagrozenia" Text="{Binding Zagrozenia, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="444,299,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
 
-        <Label Content="Jakie bariery wpływają na wolniejszy  rozwój i innowacyjność przedsiębiorstwa:" HorizontalAlignment="Left" Margin="3,103,0,0" VerticalAlignment="Top" Width="425" />
+        <Label Content="Jakie bariery wpływają na wolniejszy  rozwój i innowacyjność przedsiębiorstwa:" HorizontalAlignment="Left" Margin="154,41,0,0" VerticalAlignment="Top" Width="425" />
 
         <Label Content="a) Wewnętrzne ( występujące bezpośrednio w przedsiębiorstwie)" HorizontalAlignment="Left" Margin="78,129,0,0" VerticalAlignment="Top" Width="350" />
         <Label Content="b) Zewnętrzne ( związane z otoczeniem przedsiębiorstwa)" HorizontalAlignment="Left" Margin="116,157,0,0" VerticalAlignment="Top" Width="312"/>
-        <Label Content="        SWOT przedsiębiorstwa: ( proszę wymienić min. po 2 w każdym obszarze)" HorizontalAlignment="Left" Margin="3,185,0,0" VerticalAlignment="Top" Width="425"/>
+        <Label Content="        SWOT przedsiębiorstwa: ( proszę wymienić min. po 2 w każdym obszarze)" HorizontalAlignment="Left" Margin="139,188,0,0" VerticalAlignment="Top" Width="425"/>
         <Label Content="a) Mocne strony przedsiębiorstwa:" HorizontalAlignment="Left" Margin="236,213,0,0" VerticalAlignment="Top" Width="192"/>
         <Label Content="  b) Słabe strony przedsiębiorstwa: " HorizontalAlignment="Left" Margin="237,240,0,0" VerticalAlignment="Top" Width="191"/>
         <Label Content="c)Szanse przedsiębiorstwa: " HorizontalAlignment="Left" Margin="276,268,0,0" VerticalAlignment="Top" Width="151" />
