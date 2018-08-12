@@ -246,7 +246,10 @@ namespace Audyt_innowacyjności.ViewModel
 
         ///2//////////////////////////////////////////////////////////////////////
 
+<<<<<<< HEAD
      
+=======
+>>>>>>> dd3653ca34b674641ee4a1d0d6a3cf96737da46c
 
         public int IloscPracownikow
         {
