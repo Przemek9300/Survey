@@ -30,8 +30,9 @@
         <Label Content="Posiadane aktywa prawne" HorizontalAlignment="Left" Margin="252,335,0,0" VerticalAlignment="Top" Height="30" Width="143"/>
 
         <Label Content="Strona 3/14" HorizontalAlignment="Left" Margin="328,10,0,0" VerticalAlignment="Top"/>
+		<TextBlock  Text="{Binding ValidationErrorsString}" Foreground="Red" HorizontalAlignment="Right"  TextWrapping="Wrap" VerticalAlignment="Top" Height="147" Width="264" Margin="588,4,-52,299"/>
 
 
 
-    </Grid>
+	</Grid>
 </Page>

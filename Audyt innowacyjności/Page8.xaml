@@ -30,6 +30,8 @@
         <TextBox x:Name="SklonnoscDoRyzyka" Text="{Binding SklonnoscDoRyzyka, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,323,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
         <Label Content="Skłonność do podejmowania ryzyka" HorizontalAlignment="Left" Margin="183,323,0,0" VerticalAlignment="Top" />
         <Label Content="Wskaźniki innowacji" HorizontalAlignment="Left" Margin="309,36,0,0" VerticalAlignment="Top" Width="116"/>
+		<TextBlock  Text="{Binding ValidationErrorsString}" Foreground="Red" HorizontalAlignment="Right"  TextWrapping="Wrap" VerticalAlignment="Top" Height="147" Width="264" Margin="588,4,-52,299"/>
 
-    </Grid>
+
+	</Grid>
 </Page>

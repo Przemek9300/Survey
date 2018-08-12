@@ -34,6 +34,7 @@
         <RadioButton GroupName="PerpektywaRozwoju " Content="SCHYŁKOWY" Margin="493,302,200,128.6" Checked="PerpektywaRozwojuSCHYLKOWY"/>
         <RadioButton GroupName="PerpektywaRozwoju " Content="STABILNY" Margin="605,302,123,124.6" Checked="PerpektywaRozwojuSTABILNY"/>
         <RadioButton GroupName="PerpektywaRozwoju " Content="NIESTABILNY" Margin="682,302,22,124.6" Checked="PerpektywaRozwojuNIESTABILNY"/>
+		<TextBlock  Text="{Binding ValidationErrorsString}" Foreground="Red" HorizontalAlignment="Right"  TextWrapping="Wrap" VerticalAlignment="Top" Height="147" Width="264" Margin="588,4,-52,299"/>
 
-    </Grid>
+	</Grid>
 </Page>

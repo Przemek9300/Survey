@@ -12,7 +12,6 @@
         <Button Content="Zakończ" HorizontalAlignment="Left" Margin="653,408,0,0" VerticalAlignment="Top" Width="75" Click="Next"/>
         <Button Content="Confij" HorizontalAlignment="Left" Margin="573,408,0,0" VerticalAlignment="Top" Width="75" Click="Back"/>
         <Label Content="Strona 14/14" HorizontalAlignment="Left" Margin="328,10,0,0" VerticalAlignment="Top"/>
-        <TextBlock  Text="{Binding ValidationErrorsString}" Foreground="Red" HorizontalAlignment="Center"  TextWrapping="Wrap" VerticalAlignment="Center" Height="147" Width="264" Margin="242,151,294,151.6"/>
         <TextBox x:Name="StrategiaRozwoju" Text="{Binding StrategiaRozwoju, Mode=TwoWay, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="386,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
         <TextBox x:Name="CenyWStosunkuDoKonkurencji"  Text="{Binding CenyWStosunkuDoKonkurencji, Mode=TwoWay, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="386,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
         <TextBox x:Name="PrzewagaKonkurencyjna" Text="{Binding PrzewagaKonkurencyjna, Mode=TwoWay, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="386,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
@@ -35,6 +34,7 @@
         <CheckBox Content="" HorizontalAlignment="Left" Margin="361,354,0,0" VerticalAlignment="Top" Width="100" Checked="NoweOprogramowanie" IsChecked="False"/>
         <CheckBox Content="" HorizontalAlignment="Left" Margin="361,379,0,0" VerticalAlignment="Top" Width="20" Checked="InneDzialania" IsChecked="False" Height="22"/>
         <TextBox x:Name="InneDzialaniaKomentarz" Text="{Binding InneDzialaniaKomentarz, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="386,379,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
+		<TextBlock  Text="{Binding ValidationErrorsString}" Foreground="Red" HorizontalAlignment="Right"  TextWrapping="Wrap" VerticalAlignment="Top" Height="147" Width="264" Margin="588,4,-52,299"/>
 
-    </Grid>
+	</Grid>
 </Page>

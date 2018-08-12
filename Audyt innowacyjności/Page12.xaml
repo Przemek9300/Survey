@@ -30,6 +30,7 @@
         <Label Content="  b) Słabe strony przedsiębiorstwa: " HorizontalAlignment="Left" Margin="237,240,0,0" VerticalAlignment="Top" Width="191"/>
         <Label Content="c)Szanse przedsiębiorstwa: " HorizontalAlignment="Left" Margin="276,268,0,0" VerticalAlignment="Top" Width="151" />
         <Label Content="  d) Zagrożenia dla przedsiębiorstwa:" HorizontalAlignment="Left" Margin="224,296,0,0" VerticalAlignment="Top" Width="204" />
+		<TextBlock  Text="{Binding ValidationErrorsString}" Foreground="Red" HorizontalAlignment="Right"  TextWrapping="Wrap" VerticalAlignment="Top" Height="147" Width="264" Margin="588,4,-52,299"/>
 
-    </Grid>
+	</Grid>
 </Page>

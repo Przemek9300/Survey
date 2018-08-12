@@ -22,7 +22,8 @@
 
         <Label Content="Strona 4/14" HorizontalAlignment="Left" Margin="328,10,0,0" VerticalAlignment="Top"/>
         <Label Content="Dodatkowe dane o przedsiębiorstwie" HorizontalAlignment="Left" Margin="268,36,0,0" VerticalAlignment="Top" Width="222"/>
+		<TextBlock  Text="{Binding ValidationErrorsString}" Foreground="Red" HorizontalAlignment="Right"  TextWrapping="Wrap" VerticalAlignment="Top" Height="147" Width="264" Margin="588,4,-52,299"/>
 
 
-    </Grid>
+	</Grid>
 </Page>

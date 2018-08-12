@@ -145,6 +145,10 @@
     <Compile Include="Migrations\201808121113249_add enum.Designer.cs">
       <DependentUpon>201808121113249_add enum.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201808121538470_mg.cs" />
+    <Compile Include="Migrations\201808121538470_mg.Designer.cs">
+      <DependentUpon>201808121538470_mg.cs</DependentUpon>
+    </Compile>
     <Compile Include="Page10.xaml.cs">
       <DependentUpon>Page10.xaml</DependentUpon>
     </Compile>
@@ -324,6 +328,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201808121113249_add enum.resx">
       <DependentUpon>201808121113249_add enum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808121538470_mg.resx">
+      <DependentUpon>201808121538470_mg.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

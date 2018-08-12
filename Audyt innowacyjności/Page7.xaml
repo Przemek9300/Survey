@@ -26,6 +26,8 @@
         <Label Content="d) marketingowe: " HorizontalAlignment="Left" Margin="333,291,-139,-15" VerticalAlignment="Top" Width="106" />
         <Label Content="Strona 6/14" HorizontalAlignment="Left" Margin="328,10,0,0" VerticalAlignment="Top"/>
         <Label Content="Wprowadzane innowacje w przedsiębiorstwie na przełomie ostatnich 3 lat:" HorizontalAlignment="Left" Margin="162,36,0,0" VerticalAlignment="Top" Width="405"/>
+		<TextBlock  Text="{Binding ValidationErrorsString}" Foreground="Red" HorizontalAlignment="Right"  TextWrapping="Wrap" VerticalAlignment="Top" Height="147" Width="264" Margin="588,4,-52,299"/>
 
-    </Grid>
+
+	</Grid>
 </Page>

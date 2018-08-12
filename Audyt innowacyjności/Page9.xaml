@@ -30,6 +30,7 @@
         <TextBox x:Name="InneKomentarz" Text="{Binding InneKomentarz, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="405,335,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>
         <Label Content="Strona 8/14" HorizontalAlignment="Left" Margin="328,10,0,0" VerticalAlignment="Top"/>
         <Label Content="Źródła innowacji i cele innowacji w firmie" HorizontalAlignment="Left" Margin="242,36,0,0" VerticalAlignment="Top" Width="238"/>
+		<TextBlock  Text="{Binding ValidationErrorsString}" Foreground="Red" HorizontalAlignment="Right"  TextWrapping="Wrap" VerticalAlignment="Top" Height="147" Width="264" Margin="588,4,-52,299"/>
 
-    </Grid>
+	</Grid>
 </Page>

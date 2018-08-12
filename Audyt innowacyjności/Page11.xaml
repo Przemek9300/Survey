@@ -17,9 +17,10 @@
         <TextBox x:Name="PomiarStopniaInnowacyjnosciKomentarz" Text="{Binding KoordynacjaPracyKomentarz, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="50,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="486" RenderTransformOrigin="-1.562,-1.653"/>
         <RadioButton GroupName="PomiarStopniaInnowacyjnosci" Content="TAK" IsChecked="True" Margin="416,163,293,286.6" Checked="PomiarStopniaInnowacyjnosciTAK"/>
         <RadioButton GroupName="PomiarStopniaInnowacyjnosci" Content="NIE" Margin="475,163,239,286.6" Checked="PomiarStopniaInnowacyjnosciNIE"/>
+		<TextBlock  Text="{Binding ValidationErrorsString}" Foreground="Red" HorizontalAlignment="Right"  TextWrapping="Wrap" VerticalAlignment="Top" Height="147" Width="264" Margin="588,4,-52,299"/>
 
 
 
 
-    </Grid>
+	</Grid>
 </Page>

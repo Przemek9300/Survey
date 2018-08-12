@@ -37,6 +37,7 @@
         <RadioButton GroupName="PraceBadawcze" Content="TAK" IsChecked="True" Margin="454,116,290,316.6" Checked="PraceBadawczeTAK"/>
         <RadioButton GroupName="PraceBadawcze" Content="NIE" Margin="513,116,226,316.6" Checked="PraceBadawczeNIE"/>
         <RadioButton GroupName="PraceBadawcze" Content="PLANUJE" Margin="573,116,152,313.6" Checked="PraceBadawczePLANUJE"/>
+		<TextBlock  Text="{Binding ValidationErrorsString}" Foreground="Red" HorizontalAlignment="Right"  TextWrapping="Wrap" VerticalAlignment="Top" Height="147" Width="264" Margin="588,4,-52,299"/>
 
-    </Grid>
+	</Grid>
 </Page>

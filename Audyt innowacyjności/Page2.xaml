@@ -30,6 +30,7 @@
         <Label Content="Od ilu lat istnieje przedsiębiorstwo" HorizontalAlignment="Left" Margin="183,268,0,0" VerticalAlignment="Top" />
 		<Label Content="Strona 1/14" HorizontalAlignment="Left" Margin="328,10,0,0" VerticalAlignment="Top"/>
 		<Label x:Name="validator"  Foreground="red" Content="" HorizontalAlignment="Left" Margin="617,58,0,0" VerticalAlignment="Top"/>
+		<TextBlock  Text="{Binding ValidationErrorsString}" Foreground="Red" HorizontalAlignment="Right"  TextWrapping="Wrap" VerticalAlignment="Top" Height="147" Width="264" Margin="588,4,-52,299"/>
 
 
 
