@@ -843,6 +843,12 @@ namespace Audyt_innowacyjności.ViewModel
             Validator.AddRequiredRule(() => WiekPrzedsiebiorstwa, "Wiek przedsiebiorstwa jest wymagana");
             Validator.AddRule(() => RuleResult.Assert(WiekPrzedsiebiorstwa >= 0, "Wiek przedsiebiostwa musi być nieujemny"));
 
+            Validator.AddRule(() => RuleResult.Assert(Innowacyjnosc >= 0 && Innowacyjnosc<=5, "Wartość innowacyjności [1-5]"));
+            Validator.AddRule(() => RuleResult.Assert(ZwiazkiFirmy >= 0 && ZwiazkiFirmy <= 5, "Wartość związków firmy [1-5]"));
+            Validator.AddRule(() => RuleResult.Assert(StosunkiZAgencjami >= 0 && StosunkiZAgencjami <= 5, "Wartość stosunków z agencjami [1-5]"));
+            Validator.AddRule(() => RuleResult.Assert(StosunkiZInstytucjami >= 0 && StosunkiZInstytucjami <= 5, "Wartość stosunków z instytucjami [1-5]"));
+
+
             Validator.AddRequiredRule(() => ZasiegDzialalnosci, "Zasięg działalności jest wymagane");
             //Validator.AddRequiredRule(() => KoordynacjaPracyKomentarz, "Komentarz jest wymagany");
             //Validator.AddRequiredRule(() => ProcesoweKomentarz, "Procesowy komenatrz jest wymagany");
