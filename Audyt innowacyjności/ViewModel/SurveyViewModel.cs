@@ -838,9 +838,9 @@ namespace Audyt_innowacyjności.ViewModel
             Validator.AddRequiredRule(() => IloscPracownikow, "Ilość pracowników jest wymagana");
             Validator.AddRule(() => RuleResult.Assert(IloscPracownikow >= 0, "Wiek przedsiebiostwa musi być nieujemny"));
             Validator.AddRequiredRule(() => PoziomWyksztalcenia, "Nazwa przedesiebiorstwa jest wymagana");
-            Validator.AddRequiredRule(() => StazPracy, "Nazwa przedesiebiorstwa jest wymagana");
-            Validator.AddRule(() => RuleResult.Assert(StazPracy >= 0, "Wiek przedsiebiostwa musi być nieujemny"));
-            Validator.AddRequiredRule(() => WiekPrzedsiebiorstwa, "Nazwa przedesiebiorstwa jest wymagana");
+            Validator.AddRequiredRule(() => StazPracy, "Staż pracy jest wymagana");
+            Validator.AddRule(() => RuleResult.Assert(StazPracy >= 0, "Wiek przedsiebiorstwa musi być nieujemny"));
+            Validator.AddRequiredRule(() => WiekPrzedsiebiorstwa, "Wiek przedsiebiorstwa jest wymagana");
             Validator.AddRule(() => RuleResult.Assert(WiekPrzedsiebiorstwa >= 0, "Wiek przedsiebiostwa musi być nieujemny"));
 
             Validator.AddRequiredRule(() => ZasiegDzialalnosci, "Zasięg działalności jest wymagane");
@@ -853,12 +853,20 @@ namespace Audyt_innowacyjności.ViewModel
             Validator.AddRequiredRule(() => BarieryWewnetrzne, "Bariery wewnętrzne są wymagane");
             Validator.AddRequiredRule(() => BarieryZewnetrzne, "Bariery zewnetrzne są wymagane");
 
+            Validator.AddRequiredRule(() => RynekUsług, "Bariery wewnętrzne są wymagane");
+            Validator.AddRequiredRule(() => StrategiaRozwoju, "Strategia rozwoju jest wymagana");
+            Validator.AddRequiredRule(() => CenyWStosunkuDoKonkurencji, "Ceny w stosunku do konkurencji są wymagane");
+            Validator.AddRequiredRule(() => PrzewagaKonkurencyjna, "Przewaga konkurencji jest wymagana");
+            Validator.AddRequiredRule(() => KonkurentISubstytuty, "Konkurent i substytuty są wymagane");
+            Validator.AddRequiredRule(() => RozniceProduktow, "Róznice produktów są wymagane");
+
+
 
 
             Validator.AddRequiredRule(() => MocneStrony, "Mocne strony są wymagane");
             Validator.AddRequiredRule(() => SlabeStrony, "Słabe strony są wymagane");
             Validator.AddRequiredRule(() => Szanse, "Szanse są wymagane");
-            Validator.AddRequiredRule(() => Zag, "Zagrożenia są wymagane");
+            Validator.AddRequiredRule(() => Zagrozenia, "Zagrożenia są wymagane");
 
 
 
