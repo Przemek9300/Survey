@@ -246,12 +246,7 @@ namespace Audyt_innowacyjności.ViewModel
 
         ///2//////////////////////////////////////////////////////////////////////
 
-        private int iloscPracownikow;
-        private string poziomWyksztalcenia;
-
-        private int stazPracy;
-
-        private int wiekZatrudnienia;
+     
 
         public int IloscPracownikow
         {
@@ -320,24 +315,204 @@ namespace Audyt_innowacyjności.ViewModel
 
         ////3/////////////////////////////////////////////////////////////////////
 
-        public int Obroty { get; set; }
-        public int Zysk { get; set; }
-        public int AktywaNiematerialne { get; set; }
-        public int AktywaMaterialne { get; set; }
-        public int AktywaPrawne { get; set; }
+        public int Obroty
+        {
+            get { return obroty; }
+            set
+            {
+                obroty = value;
+
+                RaisePropertyChanged(nameof(Obroty));
+                Validator.ValidateAsync(nameof(Obroty));
+
+                {
+
+                }
+
+            }
+        }
+        public int Zysk
+        {
+            get { return zysk; }
+            set
+            {
+                zysk = value;
+
+                RaisePropertyChanged(nameof(Zysk));
+                Validator.ValidateAsync(nameof(Zysk));
+
+                {
+
+                }
+
+            }
+        }
+        public int AktywaNiematerialne
+        {
+            get { return aktywaNiematerialne; }
+            set
+            {
+                aktywaNiematerialne = value;
+
+                RaisePropertyChanged(nameof(AktywaNiematerialne));
+                Validator.ValidateAsync(nameof(AktywaNiematerialne));
+
+                {
+
+                }
+
+            }
+        }
+        public int AktywaMaterialne
+        {
+            get { return aktywaMaterialne; }
+            set
+            {
+                aktywaMaterialne = value;
+
+                RaisePropertyChanged(nameof(AktywaMaterialne));
+                Validator.ValidateAsync(nameof(AktywaMaterialne));
+
+                {
+
+                }
+
+            }
+        }
+        public int AktywaPrawne
+        {
+            get { return aktywaPrawne; }
+            set
+            {
+                aktywaPrawne = value;
+
+                RaisePropertyChanged(nameof(AktywaPrawne));
+                Validator.ValidateAsync(nameof(AktywaPrawne));
+
+                {
+
+                }
+
+            }
+        }
 
         /////4////////////////////////////////////////////////////////////////////
 
-        public string ZasiegDzialanosci { get; set; }
-        public int SzczebleHierarchiPionowej { get; set; }
+        public string ZasiegDzialalnosci
+        {
+            get { return zasiegDzialanosci; }
+            set
+            {
+                zasiegDzialanosci = value;
+
+                RaisePropertyChanged(nameof(ZasiegDzialalnosci));
+                Validator.ValidateAsync(nameof(ZasiegDzialalnosci));
+
+                {
+
+                }
+
+            }
+        }
+        public int SzczebleHierarchiPionowej
+        {
+            get { return szczebleHierarchiPionowej; }
+            set
+            {
+                szczebleHierarchiPionowej = value;
+
+                RaisePropertyChanged(nameof(SzczebleHierarchiPionowej));
+                Validator.ValidateAsync(nameof(SzczebleHierarchiPionowej));
+
+                {
+
+                }
+
+            }
+        }
 
         ///////5//////////////////////////////////////////////////////////////////
 
-        public bool KoordynacjaPracy { get; set; }
-        public string KoordynacjaPracyKomentarz { get; set; }
-        public bool PracaZespolowa { get; set; }
-        public bool WsparcieInnowacji { get; set; }
-        public int Innowacyjnosc { get; set; }
+        public bool KoordynacjaPracy
+        {
+            get { return koordynacjaPracy; }
+            set
+            {
+                koordynacjaPracy = value;
+
+                RaisePropertyChanged(nameof(KoordynacjaPracy));
+                Validator.ValidateAsync(nameof(KoordynacjaPracy));
+
+                {
+
+                }
+
+            }
+        }
+        public string KoordynacjaPracyKomentarz
+        {
+            get { return koordynacjaPracyKomentarz; }
+            set
+            {
+                koordynacjaPracyKomentarz = value;
+
+                RaisePropertyChanged(nameof(KoordynacjaPracyKomentarz));
+                Validator.ValidateAsync(nameof(KoordynacjaPracyKomentarz));
+
+                {
+
+                }
+
+            }
+        }
+        public bool PracaZespolowa
+        {
+            get { return pracaZespolowa; }
+            set
+            {
+                pracaZespolowa = value;
+
+                RaisePropertyChanged(nameof(PracaZespolowa));
+                Validator.ValidateAsync(nameof(PracaZespolowa));
+
+                {
+
+                }
+
+            }
+        }
+        public bool WsparcieInnowacji
+        {
+            get { return wsparcieInnowacji; }
+            set
+            {
+                wsparcieInnowacji = value;
+
+                RaisePropertyChanged(nameof(WsparcieInnowacji));
+                Validator.ValidateAsync(nameof(WsparcieInnowacji));
+
+                {
+
+                }
+
+            }
+        }
+        public int Innowacyjnosc
+        {
+            get { return innowacyjnosc; }
+            set
+            {
+                innowacyjnosc = value;
+
+                RaisePropertyChanged(nameof(Innowacyjnosc));
+                Validator.ValidateAsync(nameof(Innowacyjnosc));
+
+                {
+
+                }
+
+            }
+        }
 
         public int ZwiazkiFirmy { get; set; }
         public int StosunkiZAgencjami { get; set; }
@@ -390,15 +565,105 @@ namespace Audyt_innowacyjności.ViewModel
         public string PomiarStopniaInnowacyjnosciKomentarz { get; set; }
         //////////////9///////////////////////////////////////////////////////////
 
-        public string BarieryWewnetrzne { get; set; }
-        public string BarieryZewnetrzne { get; set; }
+        public string BarieryWewnetrzne
+        {
+            get { return barieryWewnetrzne; }
+            set
+            {
+                barieryWewnetrzne = value;
+
+                RaisePropertyChanged(nameof(BarieryWewnetrzne));
+                Validator.ValidateAsync(nameof(BarieryWewnetrzne));
+
+                {
+
+                }
+
+            }
+        }
+        public string BarieryZewnetrzne
+        {
+            get { return barieryZewnetrzne; }
+            set
+            {
+                barieryZewnetrzne = value;
+
+                RaisePropertyChanged(nameof(BarieryZewnetrzne));
+                Validator.ValidateAsync(nameof(BarieryZewnetrzne));
+
+                {
+
+                }
+
+            }
+        }
 
         //////////////10///////////////////////////////////////////////////////////
 
-        public string MocneStrony { get; set; }
-        public string SlabeStrony { get; set; }
-        public string Szanse { get; set; }
-        public string Zagrozenia { get; set; }
+        public string MocneStrony
+        {
+            get { return mocneStrony; }
+            set
+            {
+                mocneStrony = value;
+
+                RaisePropertyChanged(nameof(MocneStrony));
+                Validator.ValidateAsync(nameof(MocneStrony));
+
+                {
+
+                }
+
+            }
+        }
+        public string SlabeStrony
+        {
+            get { return slabeStrony; }
+            set
+            {
+                slabeStrony = value;
+
+                RaisePropertyChanged(nameof(SlabeStrony));
+                Validator.ValidateAsync(nameof(SlabeStrony));
+
+                {
+
+                }
+
+            }
+        }
+        public string Szanse
+        {
+            get { return szanse; }
+            set
+            {
+                szanse = value;
+
+                RaisePropertyChanged(nameof(Szanse));
+                Validator.ValidateAsync(nameof(Szanse));
+
+                {
+
+                }
+
+            }
+        }
+        public string Zagrozenia
+        {
+            get { return zagrozenia; }
+            set
+            {
+                zagrozenia = value;
+
+                RaisePropertyChanged(nameof(Zagrozenia));
+                Validator.ValidateAsync(nameof(Zagrozenia));
+
+                {
+
+                }
+
+            }
+        }
 
         //////////////11///////////////////////////////////////////////////////////
 
@@ -425,13 +690,103 @@ namespace Audyt_innowacyjności.ViewModel
         public string WyrobFirmy9 { get; set; }
         public string WyrobFirmy10 { get; set; }
 
-        public string RynekUsług { get; set; }
+        public string RynekUsług
+        {
+            get { return rynekUsług; }
+            set
+            {
+                rynekUsług = value;
+
+                RaisePropertyChanged(nameof(RynekUsług));
+                Validator.ValidateAsync(nameof(RynekUsług));
+
+                {
+
+                }
+
+            }
+        }
         public PerpektywaRozwoju PerpektywaRozwoju { get; set; }
-        public string StrategiaRozwoju { get; set; }
-        public string CenyWStosunkuDoKonkurencji { get; set; }
-        public string PrzewagaKonkurencyjna { get; set; }
-        public string KonkurentISubstytuty { get; set; }
-        public string RozniceProduktow { get; set; }
+        public string StrategiaRozwoju
+        {
+            get { return strategiaRozwoju; }
+            set
+            {
+                strategiaRozwoju = value;
+
+                RaisePropertyChanged(nameof(StrategiaRozwoju));
+                Validator.ValidateAsync(nameof(StrategiaRozwoju));
+
+                {
+
+                }
+
+            }
+        }
+        public string CenyWStosunkuDoKonkurencji
+        {
+            get { return cenyWStosunkuDoKonkurencji; }
+            set
+            {
+                cenyWStosunkuDoKonkurencji = value;
+
+                RaisePropertyChanged(nameof(CenyWStosunkuDoKonkurencji));
+                Validator.ValidateAsync(nameof(CenyWStosunkuDoKonkurencji));
+
+                {
+
+                }
+
+            }
+        }
+        public string PrzewagaKonkurencyjna
+        {
+            get { return przewagaKonkurencyjna; }
+            set
+            {
+                przewagaKonkurencyjna = value;
+
+                RaisePropertyChanged(nameof(PrzewagaKonkurencyjna));
+                Validator.ValidateAsync(nameof(PrzewagaKonkurencyjna));
+
+                {
+
+                }
+
+            }
+        }
+        public string KonkurentISubstytuty
+        {
+            get { return konkurentISubstytuty; }
+            set
+            {
+                konkurentISubstytuty = value;
+
+                RaisePropertyChanged(nameof(KonkurentISubstytuty));
+                Validator.ValidateAsync(nameof(KonkurentISubstytuty));
+
+                {
+
+                }
+
+            }
+        }
+        public string RozniceProduktow
+        {
+            get { return rozniceProduktow; }
+            set
+            {
+                rozniceProduktow = value;
+
+                RaisePropertyChanged(nameof(RozniceProduktow));
+                Validator.ValidateAsync(nameof(RozniceProduktow));
+
+                {
+
+                }
+
+            }
+        }
 
 
         ///13/////////////////////
@@ -453,7 +808,22 @@ namespace Audyt_innowacyjności.ViewModel
             }
         }
 
-        public string RoznicaProduktow { get; set; }
+        /*public string RoznicaProduktow
+        {
+            get { return roznicaProduktow; }
+            set
+            {
+                roznicaProduktow = value;
+
+                RaisePropertyChanged(nameof(RoznicaProduktow));
+                Validator.ValidateAsync(nameof(RoznicaProduktow));
+
+                {
+
+                }
+
+            }
+        }*/
 
         private void ConfigureValidationRules()
         {
