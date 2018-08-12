@@ -13,7 +13,7 @@
 			<RowDefinition Height="*" />
 			<RowDefinition Height="Auto" />
 		</Grid.RowDefinitions>
-		<WpfCharts:SpiderChart Title="Spider chart"  
+		<WpfCharts:SpiderChart Title="WSKAŹNIKI INNOWACYJNOŚCI"  
                                Lines="{Binding Lines}" 
                                Axis="{Binding Axes}" 
                                Minimum="1" 
