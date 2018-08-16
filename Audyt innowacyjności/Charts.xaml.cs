@@ -86,6 +86,13 @@ namespace Audyt_innowacyjności
         private void Check(object sender, RoutedEventArgs e)
         {
             string comments = "";
+            double score = 0;
+            foreach (var item in Pts)
+            {
+                score += item;
+            }
+            score /= Pts.Count;
+            comments += "Średnia ocena innowacyjności:" + String.Format("{0:F2}", score) + "\n";
             if (Pts[0] == 1)
                 comments += Comments.result[0];
             if (Pts[0] == 2 || Pts[0] == 3)
@@ -146,13 +153,7 @@ namespace Audyt_innowacyjności
                 comments += Comments.result[22] + Environment.NewLine;
             if (Pts[7] >= 4)
                 comments += Comments.result[23] + Environment.NewLine;
-            double score = 0;
-            foreach (var item in Pts)
-            {
-                score += item;
-            }
-            score /= Pts.Count;
-            comments += "Ocena innowacyjności średnia:" + String.Format("{0:F2}", score);
+            
             if (Data.PraceBadawcze == PraceBadawcze.TAK)
                 comments += "Jeśli firma przeznacza na badania i rozwój pewien procent zysku, otwiera sobie możliwość ciągłego rozwoju i udoskonalenia procesów twórczych, dzięki czemu organizacja może lepiej funkcjonować. Nakłady przeznaczone na innowacyjność przynoszą skutek w postaci wprowadzania patentów oraz ochroną zdobytej wiedzy. Warto wciąż gospodarować kapitał by nadal się rozwijać, a nie tylko poprzestawać na zdobytych już patentach." + Environment.NewLine;
             else if (Data.PraceBadawcze == PraceBadawcze.NIE)
