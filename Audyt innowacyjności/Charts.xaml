@@ -21,7 +21,7 @@
                                Ticks="5" 
                                ShowLegend="False" 
                                LegendLocation="BottomRight"
-                               LegendBackgroundColor="Red" Height="800" Width="800" VerticalAlignment="Bottom" Grid.RowSpan="2" />
+                               LegendBackgroundColor="Red" Height="500" Width="500" VerticalAlignment="Bottom" Grid.RowSpan="2" />
 		<Button 
                 HorizontalAlignment="Right"
                 Margin="5"
