@@ -14,117 +14,109 @@
             <Label FontSize="25" Content="Raport" ScrollViewer.CanContentScroll="True" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Margin="0,50,0,0"/>
             <TextBlock FontSize="12" x:Name="r"  TextWrapping="Wrap" Text="TextBlock" Margin="0,100,0,0" Width="600" Height="998" HorizontalAlignment="Center" VerticalAlignment="Top" ScrollViewer.CanContentScroll="True"/>
 
-            <TextBlock Text="Wprowadzone innowacje: " ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" Margin="0" />
+            <TextBlock Text="Wprowadzone innowacje: " Margin="0,700,-16.8,0" ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" />
 
 
-            <TextBlock Text="ProcesoweLiczba : " Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5" Width="750"/>
-            <TextBlock Text="{Binding ProcesoweLiczba}" Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="ProcesoweKomentarz : " Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5" Width="750"/>
-            <TextBlock Text="{Binding ProcesoweKomentarz}" Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="ProduktoweLiczba : " Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5" Width="750"/>
-            <TextBlock Text="{Binding ProduktoweLiczba}" Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="ProduktoweKomentarz : " Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="{Binding ProduktoweKomentarz}" Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="OrgnizacyjneLiczba : " Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="{Binding OrgnizacyjneLiczba}" Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="OrgnizacyjneKomentarz : " Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="{Binding OrgnizacyjneKomentarz}" Margin="0,930,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="MarketingoweLiczba : " Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="{Binding MarketingoweLiczba}" Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="MarketingoweKomentarz : " Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="{Binding MarketingoweKomentarz}" Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="Procesowe : " Margin="0,825,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5" Width="750"/>
+            <TextBlock Text="{Binding ProcesoweKomentarz}" Margin="0,850,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="Produktowe : " Margin="0,875,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="{Binding ProduktoweKomentarz}" Margin="0,900,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="Orgnizacyjne : " Margin="0,825,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="{Binding OrgnizacyjneKomentarz}" Margin="0,950,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="Marketingowe : " Margin="0,875,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="{Binding MarketingoweKomentarz}" Margin="0,1000,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
 
-            <TextBlock Text="Bariery które wpływają na wolniejszy rozwój innowacyjności: " ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" />
+            <TextBlock Text="Bariery które wpływają na wolniejszy rozwój innowacyjności: " Margin="0,1025,-16.8,0" ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" />
 
-            <TextBlock Text="BarieryWewnetrzne : " Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="{Binding BarieryWewnetrzne}" Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="BarieryZewnetrzne : " Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="{Binding BarieryZewnetrzne}" Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="Bariery Wewnetrzne : " Margin="0,1050,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="{Binding BarieryWewnetrzne}" Margin="0,1075,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="Bariery Zewnetrzne : " Margin="0,1100,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="{Binding BarieryZewnetrzne}" Margin="0,1125,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
 
-            <TextBlock Text="Analiza SWOT: " ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" />
+            <TextBlock Text="Analiza SWOT: " Margin="0,1050,-16.8,0" ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" />
 
-            <TextBlock Text="MocneStrony : " Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="{Binding MocneStrony}" Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="SlabeStrony : " Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="{Binding SlabeStrony}" Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="Szanse : " Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="{Binding Szanse}" Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="Zagrozenia : " Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="{Binding Zagrozenia}" Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="Mocne Strony : " Margin="0,1075,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="{Binding MocneStrony}" Margin="0,1100,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="Slabe Strony : " Margin="0,1125,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="{Binding SlabeStrony}" Margin="0,1150,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="Szanse : " Margin="0,1175,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="{Binding Szanse}" Margin="0,1200,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="Zagrozenia : " Margin="0,1225,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="{Binding Zagrozenia}" Margin="0,1250,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
 
-            <TextBlock Text="Ogólne dane o firmie: " ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" />
+            <TextBlock Text="Ogólne dane o firmie: " Margin="0,1275,-16.8,0" ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" />
 
-            <TextBlock Text="NazwaPrzedsiebiorstwa: " ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" />
-            <TextBlock Text="{Binding NazwaPrzedsiebiorstwa}" ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" />
-            <TextBlock Text="Branza: " ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center"/>
-            <TextBlock Text="{Binding Branza}" ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center"/>
-            <TextBlock Text="NumerRegon: " ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center"/>
-            <TextBlock Text="{Binding NumerRegon}" ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center"/>
-            <TextBlock Text="NumerKRS: " ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center"/>
-            <TextBlock Text="{Binding NumerKRS}" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Center" RenderTransformOrigin="0.5,0.5" />
-            <TextBlock Text="Miasto: " ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center"/>
-            <TextBlock Text="{Binding Miasto}" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Center" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="WiekPrzedsiebiorstwa : " ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center"/>
-            <TextBlock Text="{Binding WiekPrzedsiebiorstwa}" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Center" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="IloscPracownikow: " ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center"/>
-            <TextBlock Text="{Binding IloscPracownikow}" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Center" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="PoziomWyksztalcenia: " ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center"/>
-            <TextBlock Text="{Binding PoziomWyksztalcenia}" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Center" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="StazPracy: " ScrollViewer.CanContentScroll="True" HorizontalAlignment="Center" RenderTransformOrigin="0.5,0.5" Width="786" Margin="0,-149,-36,-172" VerticalAlignment="Top"/>
-            <TextBlock Text="{Binding StazPracy}" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Center" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="WiekZatrudnienia: " ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center"/>
-            <TextBlock Text="{Binding WiekZatrudnienia}" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Center" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="Nazwa Przedsiebiorstwa: " Margin="0,1300,-16.8,0" ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" />
+            <TextBlock Text="{Binding NazwaPrzedsiebiorstwa}" Margin="0,1325,-16.8,0" ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" />
+            <TextBlock Text="Branza: " Margin="0,1350,-16.8,0" ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left"/>
+            <TextBlock Text="{Binding Branza}" Margin="0,1375,-16.8,0" ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left"/>
+            <TextBlock Text="Numer Regon: " Margin="0,1400,-16.8,0" ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left"/>
+            <TextBlock Text="{Binding NumerRegon}" Margin="0,1425,-16.8,0" ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left"/>
+            <TextBlock Text="Numer KRS: " Margin="0,1450,-16.8,0" ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left"/>
+            <TextBlock Text="{Binding NumerKRS}" Margin="0,1500,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5" />
+            <TextBlock Text="Miasto: " Margin="0,1525,-16.8,0" ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left"/>
+            <TextBlock Text="{Binding Miasto}" Margin="0,1550,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="Wiek Przedsiebiorstwa : " Margin="0,1575,-16.8,0" ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left"/>
+            <TextBlock Text="{Binding WiekPrzedsiebiorstwa}" Margin="0,1600,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="Ilosc Pracownikow: " Margin="0,1625,-16.8,0" ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left"/>
+            <TextBlock Text="{Binding IloscPracownikow}" Margin="0,1650,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="Średni Poziom Wyksztalcenia: " Margin="0,1675,-16.8,0" ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left"/>
+            <TextBlock Text="{Binding PoziomWyksztalcenia}" Margin="0,1700,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="StazPracy: " Margin="0,1725,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5" Width="786" VerticalAlignment="Top"/>
+            <TextBlock Text="{Binding StazPracy}" Margin="0,1750,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="Średni Wiek Zatrudnienia: " Margin="0,1775,-16.8,0" ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left"/>
+            <TextBlock Text="{Binding WiekZatrudnienia}" Margin="0,1800,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
 
-            <TextBlock Text="ZasiegDzialanosci : " ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center"/>
-            <TextBlock Text="{Binding ZasiegDzialanosci}" Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="SzczebleHierarchiPionowej : " ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center"/>
-            <TextBlock Text="{Binding SzczebleHierarchiPionowej}" Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="Zasieg Dzialanosci : " Margin="0,1825,-16.8,0" ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left"/>
+            <TextBlock Text="{Binding ZasiegDzialanosci}" Margin="0,1850,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="Ilość Szczebli Hierarchi Pionowej : " Margin="0,1875,-16.8,0" ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left"/>
+            <TextBlock Text="{Binding SzczebleHierarchiPionowej}" Margin="0,1900,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
 
-            <TextBlock Text="Finanse przedsiębiorstwa: " ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" />
+            <TextBlock Text="Finanse przedsiębiorstwa: " Margin="0,1925,-16.8,0" ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" />
 
-            <TextBlock Text="Obroty: " ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center"/>
-            <TextBlock Text="{Binding Obroty}" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Center" RenderTransformOrigin="0.5,0.5" Width="750" VerticalAlignment="Top"/>
-            <TextBlock Text="Zysk: " ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center"/>
-            <TextBlock Text="{Binding Zysk}" Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="AktywaNiematerialne : " ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center"/>
-            <TextBlock Text="{Binding AktywaNiematerialne}" Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="AktywaMaterialne : " ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center"/>
-            <TextBlock Text="{Binding AktywaMaterialne}" Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="AktywaPrawne : " ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center"/>
-            <TextBlock Text="{Binding AktywaPrawne}" Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="Obroty: " Margin="0,1950,-16.8,0" ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left"/>
+            <TextBlock Text="{Binding Obroty}" Margin="0,1975,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5" Width="750" VerticalAlignment="Top"/>
+            <TextBlock Text="Zysk: " Margin="0,2000,-16.8,0" ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left"/>
+            <TextBlock Text="{Binding Zysk}" Margin="0,2025,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="Aktywa Niematerialne : " Margin="0,2050,-16.8,0" ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left"/>
+            <TextBlock Text="{Binding AktywaNiematerialne}" Margin="0,2075,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="Aktywa Materialne : " Margin="0,2100,-16.8,0" ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left"/>
+            <TextBlock Text="{Binding AktywaMaterialne}" Margin="0,2125,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="Aktywa Prawne : " Margin="0,2150,-16.8,0" ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left"/>
+            <TextBlock Text="{Binding AktywaPrawne}" Margin="0,2175,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
 
-            <TextBlock Text="Źródłem innowacji w firmie są: " ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" />
+            <TextBlock Text="Źródłem innowacji w firmie są: " Margin="0,2200,-16.8,0" ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" />
 
-            <TextBlock Text="Pracownicy : " Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="{Binding Pracownicy}" Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="Konkurenci : " Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="{Binding Konkurenci}" Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="Klienci  : " Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="{Binding Klienci}" Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="FirmyDoradcze : " Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="{Binding FirmyDoradcze}" Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="Uczelnie : " Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="{Binding Uczelnie}" Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="Placowki : " Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="{Binding Placowki}" Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="InneKomentarz : " Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="{Binding InneKomentarz}" Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="Pracownicy : " Margin="0,2225,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="{Binding Pracownicy}" Margin="0,2250,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="Konkurenci : " Margin="0,2275,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="{Binding Konkurenci}" Margin="0,2300,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="Klienci  : " Margin="0,2325,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="{Binding Klienci}" Margin="0,2350,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="FirmyDoradcze : " Margin="0,2375,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="{Binding FirmyDoradcze}" Margin="0,2400,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="Uczelnie : " Margin="0,2425,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="{Binding Uczelnie}" Margin="0,2450,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="Placowki : " Margin="0,2475,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="{Binding Placowki}" Margin="0,2500,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="InneKomentarz : " Margin="0,2525,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="{Binding InneKomentarz}" Margin="0,2550,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
 
-            <TextBlock Text="Celem działań innowacyjnych jest: " ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" />
+            <TextBlock Text="Celem działań innowacyjnych jest: " Margin="0,2575,-16.8,0" ScrollViewer.CanContentScroll="True" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" />
 
-            <TextBlock Text="PoszerzenieOferty : " Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="{Binding PoszerzenieOferty}" Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="UlatwienieDzialanProdukcyjnych : " Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="{Binding UlatwienieDzialanProdukcyjnych}" Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="PoprawaJakosciUslug : " Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="{Binding PoprawaJakosciUslug}" Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="WzrostPrestizu : " Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="Poszerzenie Oferty : " Margin="0,2600,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="{Binding PoszerzenieOferty}" Margin="0,2625,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="Ulatwienie Dzialan Produkcyjnych : " Margin="0,2650,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="{Binding UlatwienieDzialanProdukcyjnych}" Margin="0,2675,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="Poprawa Jakosci Uslug : " Margin="0,2700,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="{Binding PoprawaJakosciUslug}" Margin="0,2725,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="Wzrost Prestizu : " Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
             <TextBlock Text="{Binding WzrostPrestizu}" Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="NoweKontakty : " Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="Nowe Kontakty : " Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
             <TextBlock Text="{Binding NoweKontakty}" Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="ZmniejszenieKosztow : " Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="Zmniejszenie Kosztow : " Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
             <TextBlock Text="{Binding ZmniejszenieKosztow}" Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
-            <TextBlock Text="OdpowiedziDoKlientow : " Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
+            <TextBlock Text="Odpowiedzi Do Klientow : " Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
             <TextBlock Text="{Binding OdpowiedziDoKlientow}" Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5"/>
 
             <TextBlock Text="Na ile innowacyjność stała się sposobem 'życia' w firmie? : " Margin="0,0,-16.8,0" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5" Width="750"/>
