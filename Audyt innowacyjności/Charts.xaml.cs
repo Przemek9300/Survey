@@ -20,6 +20,7 @@ namespace Audyt_innowacyjności
     /// </summary>
     public partial class Charts : Page
     {
+        public SurveyViewModel Data { get; set; }
         public List<double> Pts { get; set; }
         
         private readonly Random random = new Random(1234);
@@ -54,17 +55,17 @@ namespace Audyt_innowacyjności
 
         public List<double> GetDataSet()
         {
-            var data = this.NavigationService.GetData();
+           Data = this.NavigationService.GetData();
             Pts = new List<double>() {
-            data.WprowadzoneInnowacje.Map(0, 30, 1, 5),
-               data.NowePomysły.Map(0, 46, 1, 5),
-               data.ZyskiNoweWyroby.Map(0, 24001, 1, 5),
-               data.ZyskiInnowacjeInne.Map(0, 18001, 1, 5),
-               data.DlugoscCykli.Map(0, 360, 1, 5),
-               data.WydatkiInnowacyjnosc.Map(0, 20000, 1, 5),
-               data.SredniaIloscPomyslow.Map(0, 2, 1, 5),
-               data.SklonnoscDoRyzyka.Map(1, 5, 1, 5)
-            };
+            Data.WprowadzoneInnowacje.Map(0, 30, 1, 5),
+               Data.NowePomysły.Map(0, 46, 1, 5),
+               Data.ZyskiNoweWyroby.Map(0, 24001, 1, 5),
+               Data.ZyskiInnowacjeInne.Map(0, 18001, 1, 5),
+               Data.DlugoscCykli.Map(0, 360, 1, 5),
+               Data.WydatkiInnowacyjnosc.Map(0, 20000, 1, 5),
+               Data.SredniaIloscPomyslow.Map(0, 2, 1, 5),
+               Data.SklonnoscDoRyzyka.Map(1, 5, 1, 5)
+            }; 
 
 
             return Pts;
@@ -145,11 +146,24 @@ namespace Audyt_innowacyjności
                 comments += Comments.result[22] + Environment.NewLine;
             if (Pts[7] >= 4)
                 comments += Comments.result[23] + Environment.NewLine;
+            double score = 0;
+            foreach (var item in Pts)
+            {
+                score += item;
+            }
+            score /= Pts.Count;
+            comments += "Ocena innowacyjności średnia:" + String.Format("{0:F2}", score);
+            if (Data.PraceBadawcze == PraceBadawcze.TAK)
+                comments += "Jeśli firma przeznacza na badania i rozwój pewien procent zysku, otwiera sobie możliwość ciągłego rozwoju i udoskonalenia procesów twórczych, dzięki czemu organizacja może lepiej funkcjonować. Nakłady przeznaczone na innowacyjność przynoszą skutek w postaci wprowadzania patentów oraz ochroną zdobytej wiedzy. Warto wciąż gospodarować kapitał by nadal się rozwijać, a nie tylko poprzestawać na zdobytych już patentach." + Environment.NewLine;
+            else if (Data.PraceBadawcze == PraceBadawcze.NIE)
+                comments += "Jeśli firma nie przeznacza na badania i rozwój pewien procent zysku, zamyka sobie możliwość ciągłego rozwoju i udoskonalenia procesów twórczych, przez co organizacja nie może lepiej funkcjonować. Brak nakładów na innowacyjność przynoszą skutek w postaci  braku patentów. Firma powinna rozpocząć prace badawczo rozwojowe, które w przyszłości powinny przynieść nowe patenty." + Environment.NewLine;
+            else
+                comments += "Dobrze, że firma planuje przeznaczyć nakłady na prace badawczo-rozwojowe.Jest to bardzo ważne, ponieważ gdy firma przeznacza na badania i rozwój pewien procent zysku, otwiera sobie możliwość ciągłego rozwoju i udoskonalenia procesów twórczych, dzięki czemu organizacja może lepiej funkcjonować. Nakłady przeznaczone na innowacyjność mogą przynieść skutek w postaci wprowadzania patentów oraz ochrony zdobytej wiedzy.Warto wciąż gospodarować kapitał by się rozwijać." + Environment.NewLine;
 
-
-
-
-
+            if (Data.PomiarStopniaInnowacyjnosci == true)
+                comments += "Bardzo dużym plusem jest fakt iż przedsiębiorstwo we własnym zakresie prowadzi działanie związane z pomiarem stopnia innowacyjności. Oznacza to, że innowacyjność stała się w firmie bardzo ważnym czynnikiem. Stosowe wskaźniki w firmie: w punkcie 8." + Environment.NewLine;
+            else
+                comments += "Firma nie prowadzi we własnym zakresie pomiaru stopnia innowacyjności, co pokazuje, że innowacyjność nie jest najważniejszym czynnikiem w „życiu” firmy.  Przedsiębiorstwo innowacyjne powinno stosować wskaźniki innowacyjności. W przyszłości należy wprowadzić w życie któryś z poniższych wskaźników:" + Environment.NewLine+"- Liczba nowych produktów w 3 ostatnich latach;" + Environment.NewLine + "-Procentowa wielkość sprzedaży(generowana przez nowe produkty);" + Environment.NewLine + "-Procentowa wielkość zysków generowanych przez nowe produkty;" + Environment.NewLine + "-Sprzedaż z tytułu innowacji innych niż nowe produkty;" + Environment.NewLine + "-Zyski z tytułu innowacji innych niż nowe produkty;" + Environment.NewLine + "-Liczba nowych produktów generowanych rocznie;-Liczba zgłoszeń patentowych w ostatnich 3 latach;" + Environment.NewLine + "-Liczba planowanych projektów w najbliższych 3 latach.";
             this.NavigationService.Navigate(new Raport(comments));
             }
         }
