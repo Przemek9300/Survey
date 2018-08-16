@@ -10,7 +10,7 @@
 
     <Grid>
         <Button Content="Dalej" HorizontalAlignment="Left" Margin="640,408,0,0" VerticalAlignment="Top" Width="72" Click="Next"/>
-        <Button Content="Confij" HorizontalAlignment="Left" Margin="564,408,0,0" VerticalAlignment="Top" Width="71" Click="Back"/>
+        <Button Content="Cofnij" HorizontalAlignment="Left" Margin="564,408,0,0" VerticalAlignment="Top" Width="71" Click="Back"/>
         <Label Content="Strona 13/14" HorizontalAlignment="Left" Margin="328,10,0,0" VerticalAlignment="Top"/>
 
         <TextBox x:Name="WyrobFirmy2" Text="{Binding WyrobFirmy2, Mode=TwoWay, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="391,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.562,-1.653"/>

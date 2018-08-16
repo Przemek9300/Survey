@@ -188,9 +188,6 @@
     <Compile Include="Raport.xaml.cs">
       <DependentUpon>Raport.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Result.xaml.cs">
-      <DependentUpon>Result.xaml</DependentUpon>
-    </Compile>
     <Compile Include="ViewModel\Comments.cs" />
     <Compile Include="ViewModel\ModelBase.cs" />
     <Compile Include="ViewModel\QuestionViewModel.cs" />
@@ -274,10 +271,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Raport.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Result.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

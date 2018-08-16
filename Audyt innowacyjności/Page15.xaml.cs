@@ -44,12 +44,12 @@ namespace Audyt_innowacyjności
             bool valid = model.IsValid ?? false;
             if (valid)
             {
-                using (var context = new SurveyContext())
+                /*using (var context = new SurveyContext())
                 {
                     context.Surveys.Add(Mapper.AutoMapper.Map(model));
                     context.SaveChanges();
                 }
-
+                */
                 this.NavigationService.ONavigate(new Page1(), model);
             }
             

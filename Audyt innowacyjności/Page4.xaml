@@ -12,7 +12,7 @@
 
 
         <Button Content="Dalej" HorizontalAlignment="Left" Margin="653,408,0,-40" VerticalAlignment="Top" Width="75" Click="Next"/>
-        <Button Content="Confij" HorizontalAlignment="Left" Margin="573,408,0,-40" VerticalAlignment="Top" Width="75" Click="Back"/>
+        <Button Content="Cofnij" HorizontalAlignment="Left" Margin="573,408,0,-40" VerticalAlignment="Top" Width="75" Click="Back"/>
         <!--- Pytanie 4,5,6 -->
         <TextBox x:Name="Obroty" Text="{Binding Obroty, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="26" Margin="413,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="127" RenderTransformOrigin="-1.562,-1.653"/>
         <TextBox x:Name="Zysk" Text="{Binding Zysk, ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Left" Height="26" Margin="413,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="127" RenderTransformOrigin="-1.562,-1.653"/>

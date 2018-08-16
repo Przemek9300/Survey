@@ -32,12 +32,7 @@ namespace Audyt_innowacyjności
             var model = this.NavigationService.GetData();
             this.NavigationService.ONavigate(new Page2(),model);
         }
-        private void Btn2(object sender, RoutedEventArgs e)
-        {
-            var model = this.NavigationService.GetData();
-
-            this.NavigationService.ONavigate(new Result(), model);
-        }
+        
         private void Btn3(object sender, RoutedEventArgs e)
         {
             var model = this.NavigationService.GetData();

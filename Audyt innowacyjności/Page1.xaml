@@ -20,11 +20,8 @@
 		<Button   HorizontalAlignment="Center"  VerticalAlignment="Center" Width="200" RenderTransformOrigin="-0.494,-0.531" Height="100" Click="Btn1" Margin="10,208,590,142">
 			<materialDesign:PackIcon Kind="Play" Height="54" Width="74" ></materialDesign:PackIcon>
 		</Button>
-		<Button  HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Height="100" Margin="300,208,300,142" Click="Btn2">
-			<materialDesign:PackIcon Kind="ImageFilterFrames" Height="38" Width="118" ></materialDesign:PackIcon>
-		</Button>
 
-		<Button  HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Height="100" Margin="584,208,16,142" Click="Btn3">
+        <Button  HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Height="100" Margin="584,208,16,142" Click="Btn3">
 			<materialDesign:PackIcon Kind="ChartHistogram" Height="38" Width="118" ></materialDesign:PackIcon>
 		</Button>
 

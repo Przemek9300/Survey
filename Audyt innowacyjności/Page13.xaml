@@ -10,7 +10,7 @@
 
     <Grid>
         <Button Content="Dalej" HorizontalAlignment="Left" Margin="653,408,0,0" VerticalAlignment="Top" Width="75" Click="Next"/>
-        <Button Content="Confij" HorizontalAlignment="Left" Margin="573,408,0,0" VerticalAlignment="Top" Width="75" Click="Back"/>
+        <Button Content="Cofnij" HorizontalAlignment="Left" Margin="573,408,0,0" VerticalAlignment="Top" Width="75" Click="Back"/>
         <Label Content="Strona 12/14" HorizontalAlignment="Left" Margin="328,10,0,0" VerticalAlignment="Top"/>
 
         <Label Content="Kultura przedsiębiorstwa" HorizontalAlignment="Left" Margin="298,41,0,0" VerticalAlignment="Top" Width="142" />
