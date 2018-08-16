@@ -92,7 +92,8 @@ namespace Audyt_innowacyjności
                 score += item;
             }
             score /= Pts.Count;
-            comments += "Średnia ocena innowacyjności:" + String.Format("{0:F2}", score) + "\n";
+            comments += "Średnia ocena innowacyjności:" + String.Format("{0:F2}", score)  +Environment.NewLine  +Environment.NewLine; 
+            comments += "INTENSYWNOŚĆ"+ Environment.NewLine;
             if (Pts[0] == 1)
                 comments += Comments.result[0];
             if (Pts[0] == 2 || Pts[0] == 3)
@@ -106,8 +107,8 @@ namespace Audyt_innowacyjności
             if (Pts[1] == 2 || Pts[1] == 3)
                 comments += Comments.result[4] + Environment.NewLine;
             if (Pts[1] >= 4)
-                comments += Comments.result[5] + Environment.NewLine;
-
+                comments += Comments.result[5] + Environment.NewLine + Environment.NewLine;
+            comments += "EKONOMICZNE " + Environment.NewLine;
             if (Pts[2] == 1)
                 comments += Comments.result[6] + Environment.NewLine;
             if (Pts[2] == 2 || Pts[2] == 3)
@@ -121,9 +122,9 @@ namespace Audyt_innowacyjności
             if (Pts[3] == 2 || Pts[3] == 3)
                 comments += Comments.result[10] + Environment.NewLine;
             if (Pts[3] >= 4)
-                comments += Comments.result[11] + Environment.NewLine;
+                comments += Comments.result[11] + Environment.NewLine + Environment.NewLine;
 
-
+            comments += "EFEKTYWNOŚĆ" + Environment.NewLine;
             if (Pts[4] == 1)
                 comments += Comments.result[12] + Environment.NewLine;
             if (Pts[4] == 2 || Pts[4] == 3)
@@ -137,8 +138,8 @@ namespace Audyt_innowacyjności
             if (Pts[5] == 2 || Pts[5] == 3)
                 comments += Comments.result[16] + Environment.NewLine;
             if (Pts[5] >= 4)
-                comments += Comments.result[17] + Environment.NewLine;
-
+                comments += Comments.result[17] + Environment.NewLine + Environment.NewLine;
+            comments += "KULTURA   " + Environment.NewLine;
             if (Pts[6] == 1)
                 comments += Comments.result[18] + Environment.NewLine;
             if (Pts[6] == 2 || Pts[6] == 3)
