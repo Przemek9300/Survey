@@ -164,7 +164,7 @@ namespace Audyt_innowacyjności
                 comments += "Bardzo dużym plusem jest fakt iż przedsiębiorstwo we własnym zakresie prowadzi działanie związane z pomiarem stopnia innowacyjności. Oznacza to, że innowacyjność stała się w firmie bardzo ważnym czynnikiem. Stosowe wskaźniki w firmie: w punkcie 8." + Environment.NewLine;
             else
                 comments += "Firma nie prowadzi we własnym zakresie pomiaru stopnia innowacyjności, co pokazuje, że innowacyjność nie jest najważniejszym czynnikiem w „życiu” firmy.  Przedsiębiorstwo innowacyjne powinno stosować wskaźniki innowacyjności. W przyszłości należy wprowadzić w życie któryś z poniższych wskaźników:" + Environment.NewLine+"- Liczba nowych produktów w 3 ostatnich latach;" + Environment.NewLine + "-Procentowa wielkość sprzedaży(generowana przez nowe produkty);" + Environment.NewLine + "-Procentowa wielkość zysków generowanych przez nowe produkty;" + Environment.NewLine + "-Sprzedaż z tytułu innowacji innych niż nowe produkty;" + Environment.NewLine + "-Zyski z tytułu innowacji innych niż nowe produkty;" + Environment.NewLine + "-Liczba nowych produktów generowanych rocznie;-Liczba zgłoszeń patentowych w ostatnich 3 latach;" + Environment.NewLine + "-Liczba planowanych projektów w najbliższych 3 latach.";
-            this.NavigationService.Navigate(new Raport(comments));
+            this.NavigationService.Navigate(new Raport(comments,Data));
             }
         }
     }
