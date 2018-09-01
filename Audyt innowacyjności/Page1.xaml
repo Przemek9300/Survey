@@ -13,7 +13,7 @@
         FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
       Title="Page1">
 
-    <Grid>
+	<Grid>
 
 
 
@@ -21,10 +21,12 @@
 			<materialDesign:PackIcon Kind="Play" Height="54" Width="74" ></materialDesign:PackIcon>
 		</Button>
 
-        <Button  HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Height="100" Margin="584,208,16,142" Click="Btn3">
+		<Button  HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Height="100" Margin="584,208,16,142" Click="Btn3">
 			<materialDesign:PackIcon Kind="ChartHistogram" Height="38" Width="118" ></materialDesign:PackIcon>
 		</Button>
-
+		<Button  HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Height="100"  Click="Btn4" Margin="303,208,297,142">
+			<materialDesign:PackIcon Kind="SearchWeb" Height="38" Width="118" RenderTransformOrigin="0.441,1.763" ></materialDesign:PackIcon>
+		</Button>
 
 		<materialDesign:Card Padding="32" Margin="16" materialDesign:ColorZoneAssist.Mode="PrimaryMid">
 

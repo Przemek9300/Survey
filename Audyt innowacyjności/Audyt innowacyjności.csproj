@@ -124,7 +124,8 @@
       <DependentUpon>Charts.xaml</DependentUpon>
     </Compile>
     <Compile Include="Extensions\IntExtensions.cs" />
-    <Compile Include="Mapper\AutoMapper.cs" />
+    <Compile Include="Map\CustomMapper.cs" />
+    <Compile Include="AutomapperConfig.cs" />
     <Compile Include="Migrations\201807312151208_All properties.cs" />
     <Compile Include="Migrations\201807312151208_All properties.Designer.cs">
       <DependentUpon>201807312151208_All properties.cs</DependentUpon>
@@ -187,6 +188,9 @@
     </Compile>
     <Compile Include="Raport.xaml.cs">
       <DependentUpon>Raport.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Search.xaml.cs">
+      <DependentUpon>Search.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModel\Comments.cs" />
     <Compile Include="ViewModel\ModelBase.cs" />
@@ -274,6 +278,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Search.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Migrations\201807311204000_init.cs" />
@@ -352,6 +360,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="dollar_sign_PNG21539.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="40458202_276668986506609_8509905091984097280_n.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

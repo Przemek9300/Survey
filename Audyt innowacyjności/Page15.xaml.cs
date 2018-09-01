@@ -1,6 +1,6 @@
 ﻿using Audyt_innowacyjności.DAL;
 using Audyt_innowacyjności.Extensions;
-using Audyt_innowacyjności.Mapper;
+using Audyt_innowacyjności.Map;
 using Audyt_innowacyjności.ViewModel;
 using System;
 using System.Collections.Generic;
@@ -44,12 +44,12 @@ namespace Audyt_innowacyjności
             bool valid = model.IsValid ?? false;
             if (valid)
             {
-                /*using (var context = new SurveyContext())
+                using (var context = new SurveyContext())
                 {
-                    context.Surveys.Add(Mapper.AutoMapper.Map(model));
+                    context.Surveys.Add(Map.CustomMapper.Map(model));
                     context.SaveChanges();
                 }
-                */
+
                 this.NavigationService.ONavigate(new Page1(), model);
             }
             

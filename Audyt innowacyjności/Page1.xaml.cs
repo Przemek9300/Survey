@@ -1,4 +1,6 @@
-﻿using Audyt_innowacyjności.Extensions;
+﻿using Audyt_innowacyjności.DAL;
+using Audyt_innowacyjności.Extensions;
+using Audyt_innowacyjności.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,11 +27,13 @@ namespace Audyt_innowacyjności
         {
             
             InitializeComponent();
+
         }
 
         private void Btn1(object sender, RoutedEventArgs e)
         {
-            var model = this.NavigationService.GetData();
+            var model = new SurveyViewModel();
+            this.DataContext = model;
             this.NavigationService.ONavigate(new Page2(),model);
         }
         
@@ -38,6 +42,12 @@ namespace Audyt_innowacyjności
             var model = this.NavigationService.GetData();
 
             this.NavigationService.Navigate(new Charts());
+        }
+        private void Btn4(object sender, RoutedEventArgs e)
+        {
+            var model = this.NavigationService.GetData();
+
+            this.NavigationService.Navigate(new Search());
         }
     }
 }

@@ -1,0 +1,29 @@
+﻿<Page x:Class="Audyt_innowacyjności.Search"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Audyt_innowacyjności"
+	 
+	  xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+	   Background="{DynamicResource MaterialDesignPaper}"
+		 TextElement.FontWeight="Medium"
+        TextElement.FontSize="24"
+        FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
+   
+
+      Title="Search">
+
+	<Grid>
+		<TextBox x:Name="input" HorizontalAlignment="Center" Height="54"  TextWrapping="Wrap" Text="Nazwa Przedsiebiorstwa" VerticalAlignment="Top" Width="280" Margin="180,-31,340,0"/>
+		<Button  HorizontalAlignment="Center"  Click="Find" VerticalAlignment="Top" Width="135" Height="36" RenderTransformOrigin="0.224,0.476" Margin="465,-9,200,0">
+			<materialDesign:PackIcon Kind="SearchWeb"  RenderTransformOrigin="0.441,1.763" ></materialDesign:PackIcon>
+
+		</Button>
+
+		<Label Foreground="Red" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" x:Name="error" BorderBrush="Red" Margin="396,260,394,180" Background="Transparent"></Label>
+
+	</Grid>
+</Page>

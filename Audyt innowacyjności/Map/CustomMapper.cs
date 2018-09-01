@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Audyt_innowacyjności.Mapper
+namespace Audyt_innowacyjności.Map
 {
-    public static class AutoMapper
+    public static class CustomMapper
     {
         public static Survey Map(SurveyViewModel model)
         {

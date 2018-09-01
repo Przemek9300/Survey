@@ -1,6 +1,6 @@
 ﻿using Audyt_innowacyjności.DAL;
 using Audyt_innowacyjności.Extensions;
-using Audyt_innowacyjności.Mapper;
+using Audyt_innowacyjności.Map;
 using Audyt_innowacyjności.ViewModel;
 
 using System.Windows;

@@ -33,6 +33,8 @@
 		<Frame x:Name="frame" Content="Frame" HorizontalAlignment="Center"  VerticalAlignment="Center"  Navigated="frame_Navigated" NavigationUIVisibility="Hidden">
 
 		</Frame>
+		<Image VerticalAlignment="Bottom" HorizontalAlignment="Right" Source="40458202_276668986506609_8509905091984097280_n.png" Height="254" Width="254"  ></Image>
+		<Label Content="Opracował: Krzysztof Łupina" HorizontalAlignment="Right"  VerticalAlignment="Bottom" />
 
 	</Grid>
 </Window>
